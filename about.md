@@ -4,12 +4,13 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+Challenging position with a creative work environment 
+to enhance expertise in web development and application design.
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+github : [https://github.com/sungjun221](link:https://github.com/sungjun221)
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[sungjun221@gmail.com](mailto:sungjun221@gmail.com)

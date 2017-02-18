@@ -1,9 +1,11 @@
 ---
 layout: post
-title: You're up and running!
+title:  "Welcome my site"
+date:   2017-02-18 16:16:01 -0600
+categories: jekyll update
 ---
 
-Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).
+Hello nice to meet you!
 
 ![_config.yml]({{ site.baseurl }}/images/config.png)
 
