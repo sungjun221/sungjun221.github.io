@@ -9,7 +9,8 @@ to enhance expertise in web development and application design.
 
 ### More Information
 
-github : [https://github.com/sungjun221](link:https://github.com/sungjun221)
+github : [https://github.com/sungjun221](https://github.com/sungjun221)
+
 
 ### Contact me
 
