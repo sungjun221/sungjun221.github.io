@@ -47,9 +47,7 @@ TypeScript는 2012년에 발표된 MS에서 만든 언어로 기존의 JavaScrip
   
 위 내용을 몰라도 개발할 수 있나요?
 -
-..없습니다. 그러나 웹개발을 하고 계시다면 어차피 보는 것이 좋으므로 이번 기회에 공부를 해보시는 것이 좋을 것 같습니다.
-
-TypeScript는 JavaScript의 확장된 언어라 JavaScript를 쓸 줄 안다면 약간의 공부만으로 금방 쓰실 수 있는 정도입니다.
+..없습니다. 그러나 웹개발을 하고 계시다면 어차피 보는 것이 좋으므로 이번 기회에 공부를 해보시는 것이 좋을 것 같습니다. TypeScript는 JavaScript의 확장된 언어라 JavaScript를 쓸 줄 안다면 약간의 공부만으로 금방 쓰실 수 있는 정도입니다.
 
 Angular2는..그냥 공부해야 합니다.
 
@@ -71,9 +69,6 @@ Firebase란?
 위키피디아에선 Firebase를 아래와 같이 소개하고 있습니다.
 > Firebase is a mobile and web application platform with tools and infrastructure designed to help developers build high-quality apps.
 
-Firebase는 모바일 또는 웹어플리케이션을 만들 때 메시징, 인증, DB, 저장소 등의 운영/인프라영역 구축을 제공해주는 플랫폼입니다.
-
-그래서 개발자는 서버구성이나 관리, 인증체계 구축 등을 신경쓰지 않고 Firebase에서 제공해주는 것을
-그대로 사용하면 됩니다.
+Firebase는 모바일 또는 웹어플리케이션을 만들 때 메시징, 인증, DB, 저장소 등의 운영/인프라영역 구축을 제공해주는 플랫폼입니다. 그래서 개발자는 서버구성이나 관리, 인증체계 구축 등을 신경쓰지 않고 Firebase에서 제공해주는 것을 그대로 사용하면 됩니다.
 
 그럼 Ionic2+Firebase3를 이용한 앱개발 방법에 대해 다음 장에서 설명을 이어가겠습니다.
