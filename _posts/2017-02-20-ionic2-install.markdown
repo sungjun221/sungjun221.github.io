@@ -42,10 +42,10 @@ Ionic2 프로젝트 구조
 | ./src | 개발자가 app을 위해 작성하는 code가 있는 폴더.         |
 | ./resources	   		| 각 모바일 플랫폼별 icon, splash image가 있는 폴더.         |
 | ./www		    		| build를 위해 생성하는 code가 있는 폴더. 실제 app code는 /app안에 위치함.|
-| ./hooks	    		| Cordova 빌드 프로세스 중 실행되는 스크립트가 포함된 폴더. app package 빌드 프로세스를 커스터마이징을 하고 싶을 때 유용. |
+| ./hooks	    		| Cordova 빌드 프로세스 중 실행되는 스크립트가 포함된 폴더.<br/>app package 빌드 프로세스를 커스터마이징을 하고 싶을 때 유용. |
 | ./node_modules   		| npm으로 설치한 Node 모듈이 있는 폴더. |
-| ./plugins		   		| Cordova plugin이 있는 폴더. Native와의 연동을 위해 Cordova Plugin을 만들거나 수정하게 되면 보게 될 폴더. |
-| ./platforms   		| 각 플랫폼 별(IOS, Android 등) 배포용 코드가 있는 폴더. XCode나 Android Studio로 import 하여 배포할 대상이 되는 코드. |
+| ./plugins		   		| Cordova plugin이 있는 폴더. Native와의 연동을 위해<br/>Cordova Plugin을 만들거나 수정하게 되면 보게 될 폴더. |
+| ./platforms   		| 각 플랫폼 별(IOS, Android 등) 배포용 코드가 있는 폴더.<br/>XCode나 Android Studio로 import 하여 배포할 대상이 되는 코드. |
 | ./package.json	 	| npm 의존성 관리 파일.         |
 | ./tsconfig.json	 	| TypeScript 컴파일러를 위한 설정 파일.         |
 | ./config.xml	 		| Cordova에서 app package를 생성할 때 사용하는 설정 정보 파일.           |
