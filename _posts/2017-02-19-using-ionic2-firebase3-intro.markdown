@@ -70,5 +70,3 @@ Firebase란?
 > Firebase is a mobile and web application platform with tools and infrastructure designed to help developers build high-quality apps.
 
 Firebase는 모바일 또는 웹어플리케이션을 만들 때 메시징, 인증, DB, 저장소 등의 운영/인프라영역 구축을 제공해주는 플랫폼입니다. 그래서 개발자는 서버구성이나 관리, 인증체계 구축 등을 신경쓰지 않고 Firebase에서 제공해주는 것을 그대로 사용하면 됩니다.
-
-그럼 Ionic2+Firebase3를 이용한 앱개발 방법에 대해 다음 장에서 설명을 이어가겠습니다.

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Ionic2 시작하기"
+title:  "Ionic2 프로젝트 만들기"
 date:   2017-02-20 12:56:00 +0900
 categories: ionic
 ---
@@ -50,7 +50,6 @@ Ionic2 프로젝트 구조
 | ./tsconfig.json	 	| TypeScript 컴파일러를 위한 설정 파일.         |
 | ./config.xml	 		| Cordova에서 app package를 생성할 때 사용하는 설정 정보 파일.           |
 
-봐도 아직은 감이 잘 안옵니다. 그럼 다음 장에서 화면을 수정하며 실습 해보겠습니다.
 - - -
 * 참고
     - [http://ionicframework.com/docs/v2/intro/installation/](http://ionicframework.com/docs/v2/intro/installation/)
