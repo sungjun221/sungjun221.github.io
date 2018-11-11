@@ -2,7 +2,7 @@
 layout: post
 title:  "Ionic2 프로젝트 만들기"
 date:   2017-02-20 12:56:00 +0900
-categories: ionic
+categories: ionic angular javascript
 ---
 
 이번엔 ionic2를 설치해보고 실제 화면을 띄워보겠습니다.
