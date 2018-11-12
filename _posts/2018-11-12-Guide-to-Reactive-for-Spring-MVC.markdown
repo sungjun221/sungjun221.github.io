@@ -7,7 +7,7 @@ categories: reactive spring java springmvc 리액티브 스프링 자바
 
 최근 몇 년간 애플리케이션이 점점 커지고 복잡해지면서 Asynchronous, Non-Blocking I/O 기반의 Reactive System에 대한 관심이 높아지고 있습니다.
 
-특히 Spring Framework 5부터 Spring WebFlux란 이름으로 Reactive에 대한 지원이 시작되었는데요. 더이상 Java 개발자에게도 낯설지 않은 이야기가 되었습니다. 올해 SpringOne Platform에서는 기존 Spring 개발자를 대상으로 한 Reactive 가이드 세션이 진행되었는데요. 부족하지만 그 내용을 이번 글을 통해 공유하고자 합니다.
+특히 Spring Framework 5부터 Spring WebFlux란 이름으로 Reactive에 대한 지원이 시작되었는데요. 더이상 Java 개발자에게도 낯설지 않은 이야기가 되었습니다. 올해 SpringOne Platform에서는 기존 Spring 개발자를 대상으로 한 Reactive 가이드 세션이 진행되었는데요, 부족하지만 그 내용을 이번 글을 통해 공유하고자 합니다.
 
 먼저 Reactive가 무엇인지 궁금하신 분은 아래 링크를 참고하셔요.
 * Reactive Programming
@@ -70,4 +70,4 @@ RestTemplate은 Synchronous하며 Blocking API로 구성되어 있습니다. 그
 ### WebClient  
 그래서 Spring개발진들은 5.0 버전에서 WebClient를 선보였습니다. Java8 이상에서 이용할 수 있으며, 함수형 스타일의 API를 지원합니다. Async, Non-Blocking I/O 기반입니다. RestTemplate과는 정반대의 접근방향을 가지고 있습니다. Reactive하고 선언적(Declaritive)입니다. Streaming을 활용합니다.
 
-그렇다면 다음 글에서 Demo를 통해 기존 RestTemplate과 WebClient간의 차이점을 살펴보겠습니다.
+그럼 다음 글에서 데모를 통해 기존 RestTemplate과 WebClient간의 차이점을 살펴보겠습니다.
