@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Gudie to 'Reactive' for Spring MVC" (1)
+title:  "Gudie to 'Reactive' for Spring MVC (1)"
 date:   2018-11-11 20:00:00 +0900
 categories: reactive spring java springmvc 리액티브 스프링 자바
 ---
