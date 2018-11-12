@@ -71,7 +71,9 @@ RestTemplate은 Synchronous하며 Blocking API로 구성되어 있습니다. 그
 그래서 Spring개발진들은 5.0 버전에서 WebClient를 선보였습니다. Java8 이상에서 이용할 수 있으며, 함수형 스타일의 API를 지원합니다. Async, Non-Blocking I/O 기반입니다. RestTemplate과는 정반대의 접근방향을 가지고 있습니다. Reactive하고 선언적(Declaritive)입니다. Streaming을 활용합니다.
 
 그럼 다음 글에서 데모를 통해 기존 RestTemplate과 WebClient간의 차이점을 살펴보겠습니다.
+
 <br>
+
 - - -
 * 참고
     - [SpringOne Platform 2018 - Guide to 'Reactive' for Spring MVC Developers](https://content.pivotal.io/springone-platform-2018/guide-to-reactive-for-spring-mvc-developers)
