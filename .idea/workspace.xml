@@ -2,182 +2,285 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a0c2449d-a11b-4a66-908f-54010b82a87f" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\gsshop\github\sungjun221.github.io\_includes\disqus.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\gsshop\github\sungjun221.github.io\_includes\disqus_comments.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\gsshop\github\sungjun221.github.io\_includes\meta.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\gsshop\github\sungjun221.github.io\_includes\svg-icons.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\gsshop\github\sungjun221.github.io\_layouts\page.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\gsshop\github\sungjun221.github.io\_layouts\post.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\gsshop\github\sungjun221.github.io\_sass\_highlights.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\gsshop\github\sungjun221.github.io\_sass\_reset.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\gsshop\github\sungjun221.github.io\_sass\_svg-icons.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\gsshop\github\sungjun221.github.io\_sass\_variables.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\gsshop\github\sungjun221.github.io\images\404.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\gsshop\github\sungjun221.github.io\images\config.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\gsshop\github\sungjun221.github.io\images\first-post.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\gsshop\github\sungjun221.github.io\images\jekyll-logo.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\gsshop\github\sungjun221.github.io\images\jekyll-now-theme-screenshot.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\gsshop\github\sungjun221.github.io\images\step1.gif" afterPath="" />
-      <change type="DELETED" beforePath="C:\gsshop\github\sungjun221.github.io\style.scss" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2017-02-19-using-ionic2-firebase3-intro.markdown" afterPath="$PROJECT_DIR$/_posts/2017-02-19-using-ionic2-firebase3-intro.markdown" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2017-02-20-ionic2-install.markdown" afterPath="$PROJECT_DIR$/_posts/2017-02-20-ionic2-install.markdown" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2018-11-12-Guide-to-Reactive-for-Spring-MVC-1.markdown" afterPath="$PROJECT_DIR$/_posts/2018-11-12-Guide-to-Reactive-for-Spring-MVC-1.markdown" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2018-11-13-Guide-to-Reactive-for-Spring-MVC-2.markdown" afterPath="$PROJECT_DIR$/_posts/2018-11-13-Guide-to-Reactive-for-Spring-MVC-2.markdown" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_config.yml" afterPath="$PROJECT_DIR$/_config.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_data/navigation.yml" afterPath="$PROJECT_DIR$/_data/navigation.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/sungjun221.github.io.iml" afterPath="$PROJECT_DIR$/.idea/sungjun221.github.io.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change afterPath="$PROJECT_DIR$/_layouts/pages.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LICENSE.txt" beforeDir="false" afterPath="$PROJECT_DIR$/LICENSE.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_data/navigation.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_data/navigation.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_data/ui-text.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_data/ui-text.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/analytics-providers/custom.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/analytics-providers/custom.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/analytics-providers/google-gtag.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/analytics-providers/google-gtag.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/analytics-providers/google-universal.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/analytics-providers/google-universal.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/analytics-providers/google.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/analytics-providers/google.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/analytics.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/analytics.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/archive-single.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/archive-single.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/author-profile-custom-links.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/author-profile-custom-links.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/author-profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/author-profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/base_path" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/base_path" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/breadcrumbs.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/breadcrumbs.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/browser-upgrade.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/browser-upgrade.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/category-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/category-list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/comment.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/comment.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/comments-providers/custom.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/comments-providers/custom.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/comments-providers/discourse.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/comments-providers/discourse.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/comments-providers/disqus.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/comments-providers/disqus.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/comments-providers/facebook.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/comments-providers/facebook.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/comments-providers/google-plus.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/comments-providers/google-plus.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/comments-providers/scripts.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/comments-providers/scripts.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/comments-providers/staticman.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/comments-providers/staticman.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/comments-providers/staticman_v2.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/comments-providers/staticman_v2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/comments.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/comments.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/documents-collection.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/documents-collection.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/feature_row" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/feature_row" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/figure" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/figure" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/footer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/footer/custom.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/footer/custom.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/gallery" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/gallery" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/group-by-array" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/group-by-array" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/head.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/head.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/head/custom.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/head/custom.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/masthead.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/masthead.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/nav_list" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/nav_list" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/page__hero.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/page__hero.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/page__hero_video.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/page__hero_video.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/page__taxonomy.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/page__taxonomy.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/paginator.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/paginator.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/post_pagination.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/post_pagination.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/posts-category.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/posts-category.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/posts-tag.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/posts-tag.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/read-time.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/read-time.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/scripts.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/scripts.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/search/algolia-search-scripts.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/search/algolia-search-scripts.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/search/google-search-scripts.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/search/google-search-scripts.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/search/lunr-search-scripts.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/search/lunr-search-scripts.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/search/search_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/search/search_form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/seo.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/seo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/sidebar.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/sidebar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/social-share.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/social-share.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/tag-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/tag-list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/toc" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/toc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/toc.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/toc.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/video" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/video" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/archive-taxonomy.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/archive-taxonomy.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/archive.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/archive.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/categories.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/categories.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/category.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/category.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/collection.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/collection.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/compress.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/compress.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/default.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/default.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/posts.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/posts.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/search.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/single.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/single.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/splash.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/splash.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/tag.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/tag.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/tags.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/tags.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2017-02-19-using-ionic2-firebase3-intro.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2017-02-19-using-ionic2-firebase3-intro.markdown" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2017-02-20-ionic2-install.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2017-02-20-ionic2-install.markdown" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2018-11-12-Guide-to-Reactive-for-Spring-MVC-1.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2018-11-12-Guide-to-Reactive-for-Spring-MVC-1.markdown" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2018-11-13-Guide-to-Reactive-for-Spring-MVC-2.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2018-11-13-Guide-to-Reactive-for-Spring-MVC-2.markdown" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/minimal-mistakes.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_sass/minimal-mistakes.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/minimal-mistakes/_animations.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_sass/minimal-mistakes/_animations.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/minimal-mistakes/_archive.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_sass/minimal-mistakes/_archive.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/minimal-mistakes/_base.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_sass/minimal-mistakes/_base.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/minimal-mistakes/_buttons.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_sass/minimal-mistakes/_buttons.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/minimal-mistakes/_footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_sass/minimal-mistakes/_footer.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/minimal-mistakes/_forms.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_sass/minimal-mistakes/_forms.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/minimal-mistakes/_masthead.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_sass/minimal-mistakes/_masthead.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/minimal-mistakes/_mixins.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_sass/minimal-mistakes/_mixins.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/minimal-mistakes/_navigation.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_sass/minimal-mistakes/_navigation.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/minimal-mistakes/_notices.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_sass/minimal-mistakes/_notices.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/minimal-mistakes/_page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_sass/minimal-mistakes/_page.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/minimal-mistakes/_print.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_sass/minimal-mistakes/_print.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/minimal-mistakes/_reset.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_sass/minimal-mistakes/_reset.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/minimal-mistakes/_search.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_sass/minimal-mistakes/_search.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/minimal-mistakes/_sidebar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_sass/minimal-mistakes/_sidebar.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/minimal-mistakes/_syntax.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_sass/minimal-mistakes/_syntax.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/minimal-mistakes/_tables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_sass/minimal-mistakes/_tables.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/minimal-mistakes/_utilities.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_sass/minimal-mistakes/_utilities.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/minimal-mistakes/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_sass/minimal-mistakes/_variables.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/minimal-mistakes/skins/_air.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_sass/minimal-mistakes/skins/_air.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/minimal-mistakes/skins/_aqua.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_sass/minimal-mistakes/skins/_aqua.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/minimal-mistakes/skins/_contrast.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_sass/minimal-mistakes/skins/_contrast.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/minimal-mistakes/skins/_dark.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_sass/minimal-mistakes/skins/_dark.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/minimal-mistakes/skins/_default.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_sass/minimal-mistakes/skins/_default.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/minimal-mistakes/skins/_dirt.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_sass/minimal-mistakes/skins/_dirt.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/minimal-mistakes/skins/_mint.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_sass/minimal-mistakes/skins/_mint.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/minimal-mistakes/skins/_neon.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_sass/minimal-mistakes/skins/_neon.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/minimal-mistakes/skins/_plum.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_sass/minimal-mistakes/skins/_plum.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/minimal-mistakes/skins/_sunrise.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_sass/minimal-mistakes/skins/_sunrise.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/minimal-mistakes/vendor/breakpoint/_breakpoint.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_sass/minimal-mistakes/vendor/breakpoint/_breakpoint.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/minimal-mistakes/vendor/breakpoint/_context.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_sass/minimal-mistakes/vendor/breakpoint/_context.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/minimal-mistakes/vendor/breakpoint/_helpers.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_sass/minimal-mistakes/vendor/breakpoint/_helpers.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/minimal-mistakes/vendor/breakpoint/_legacy-settings.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_sass/minimal-mistakes/vendor/breakpoint/_legacy-settings.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/minimal-mistakes/vendor/breakpoint/_no-query.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_sass/minimal-mistakes/vendor/breakpoint/_no-query.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/minimal-mistakes/vendor/breakpoint/_parsers.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_sass/minimal-mistakes/vendor/breakpoint/_parsers.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/minimal-mistakes/vendor/breakpoint/_respond-to.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_sass/minimal-mistakes/vendor/breakpoint/_respond-to.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/minimal-mistakes/vendor/breakpoint/_settings.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_sass/minimal-mistakes/vendor/breakpoint/_settings.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/minimal-mistakes/vendor/breakpoint/parsers/_double.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_sass/minimal-mistakes/vendor/breakpoint/parsers/_double.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/minimal-mistakes/vendor/breakpoint/parsers/_query.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_sass/minimal-mistakes/vendor/breakpoint/parsers/_query.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/minimal-mistakes/vendor/breakpoint/parsers/_resolution.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_sass/minimal-mistakes/vendor/breakpoint/parsers/_resolution.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/minimal-mistakes/vendor/breakpoint/parsers/_single.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_sass/minimal-mistakes/vendor/breakpoint/parsers/_single.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/minimal-mistakes/vendor/breakpoint/parsers/_triple.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_sass/minimal-mistakes/vendor/breakpoint/parsers/_triple.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/minimal-mistakes/vendor/breakpoint/parsers/double/_default-pair.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_sass/minimal-mistakes/vendor/breakpoint/parsers/double/_default-pair.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/minimal-mistakes/vendor/breakpoint/parsers/double/_default.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_sass/minimal-mistakes/vendor/breakpoint/parsers/double/_default.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/minimal-mistakes/vendor/breakpoint/parsers/double/_double-string.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_sass/minimal-mistakes/vendor/breakpoint/parsers/double/_double-string.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/minimal-mistakes/vendor/breakpoint/parsers/resolution/_resolution.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_sass/minimal-mistakes/vendor/breakpoint/parsers/resolution/_resolution.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/minimal-mistakes/vendor/breakpoint/parsers/single/_default.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_sass/minimal-mistakes/vendor/breakpoint/parsers/single/_default.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/minimal-mistakes/vendor/breakpoint/parsers/triple/_default.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_sass/minimal-mistakes/vendor/breakpoint/parsers/triple/_default.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/minimal-mistakes/vendor/magnific-popup/_magnific-popup.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_sass/minimal-mistakes/vendor/magnific-popup/_magnific-popup.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/minimal-mistakes/vendor/magnific-popup/_settings.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_sass/minimal-mistakes/vendor/magnific-popup/_settings.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/minimal-mistakes/vendor/susy/_su.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_sass/minimal-mistakes/vendor/susy/_su.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/minimal-mistakes/vendor/susy/_susy-prefix.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_sass/minimal-mistakes/vendor/susy/_susy-prefix.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/minimal-mistakes/vendor/susy/_susy.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_sass/minimal-mistakes/vendor/susy/_susy.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/minimal-mistakes/vendor/susy/plugins/_svg-grid.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_sass/minimal-mistakes/vendor/susy/plugins/_svg-grid.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/minimal-mistakes/vendor/susy/plugins/svg-grid/_prefix.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_sass/minimal-mistakes/vendor/susy/plugins/svg-grid/_prefix.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/minimal-mistakes/vendor/susy/plugins/svg-grid/_svg-api.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_sass/minimal-mistakes/vendor/susy/plugins/svg-grid/_svg-api.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/minimal-mistakes/vendor/susy/plugins/svg-grid/_svg-grid-math.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_sass/minimal-mistakes/vendor/susy/plugins/svg-grid/_svg-grid-math.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/minimal-mistakes/vendor/susy/plugins/svg-grid/_svg-settings.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_sass/minimal-mistakes/vendor/susy/plugins/svg-grid/_svg-settings.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/minimal-mistakes/vendor/susy/plugins/svg-grid/_svg-unprefix.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_sass/minimal-mistakes/vendor/susy/plugins/svg-grid/_svg-unprefix.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/minimal-mistakes/vendor/susy/plugins/svg-grid/_svg-utilities.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_sass/minimal-mistakes/vendor/susy/plugins/svg-grid/_svg-utilities.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/minimal-mistakes/vendor/susy/susy/_api.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_sass/minimal-mistakes/vendor/susy/susy/_api.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/minimal-mistakes/vendor/susy/susy/_normalize.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_sass/minimal-mistakes/vendor/susy/susy/_normalize.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/minimal-mistakes/vendor/susy/susy/_parse.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_sass/minimal-mistakes/vendor/susy/susy/_parse.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/minimal-mistakes/vendor/susy/susy/_settings.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_sass/minimal-mistakes/vendor/susy/susy/_settings.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/minimal-mistakes/vendor/susy/susy/_su-math.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_sass/minimal-mistakes/vendor/susy/susy/_su-math.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/minimal-mistakes/vendor/susy/susy/_su-validate.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_sass/minimal-mistakes/vendor/susy/susy/_su-validate.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/minimal-mistakes/vendor/susy/susy/_syntax-helpers.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_sass/minimal-mistakes/vendor/susy/susy/_syntax-helpers.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/minimal-mistakes/vendor/susy/susy/_unprefix.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_sass/minimal-mistakes/vendor/susy/susy/_unprefix.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/minimal-mistakes/vendor/susy/susy/_utilities.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_sass/minimal-mistakes/vendor/susy/susy/_utilities.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/main.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/_main.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/_main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/lunr/lunr-en.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/lunr/lunr-en.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/lunr/lunr-gr.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/lunr/lunr-gr.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/lunr/lunr-store.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/lunr/lunr-store.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/lunr/lunr.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/lunr/lunr.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/lunr/lunr.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/lunr/lunr.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/main.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/main.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/plugins/jquery.fitvids.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/plugins/jquery.fitvids.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/plugins/jquery.greedy-navigation.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/plugins/jquery.greedy-navigation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/plugins/jquery.magnific-popup.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/plugins/jquery.magnific-popup.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/plugins/jquery.smooth-scroll.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/plugins/jquery.smooth-scroll.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/vendor/jquery/jquery-3.3.1.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/vendor/jquery/jquery-3.3.1.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banner.js" beforeDir="false" afterPath="$PROJECT_DIR$/banner.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticman.yml" beforeDir="false" afterPath="$PROJECT_DIR$/staticman.yml" afterDir="false" />
     </list>
     <ignored path="sungjun221.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
-    <option name="TRACKING_ENABLED" value="true" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
-  <component name="DaemonCodeAnalyzer">
-    <disable_hints />
+  <component name="FUSProjectUsageTrigger">
+    <session id="1094956993">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.7" value="1" />
+          <entry key="project.opened" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="Gemfile" value="7" />
+          <entry key="markdown" value="31" />
+          <entry key="md" value="37" />
+          <entry key="scss" value="1" />
+          <entry key="yml" value="50" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="Markdown" value="68" />
+          <entry key="PLAIN_TEXT" value="7" />
+          <entry key="SCSS" value="1" />
+          <entry key="YAML" value="50" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="Gemfile" value="3" />
+          <entry key="css" value="4" />
+          <entry key="html" value="3" />
+          <entry key="lock" value="1" />
+          <entry key="markdown" value="6" />
+          <entry key="md" value="5" />
+          <entry key="scss" value="13" />
+          <entry key="yml" value="4" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CSS" value="4" />
+          <entry key="HTML" value="3" />
+          <entry key="Markdown" value="11" />
+          <entry key="PLAIN_TEXT" value="4" />
+          <entry key="SCSS" value="13" />
+          <entry key="YAML" value="4" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="sungjun221.github.io" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_site/index.html">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_sass/minimal-mistakes/_navigation.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.142858" vertical-offset="2185" max-vertical-offset="7638">
-              <caret line="127" column="0" selection-start-line="127" selection-start-column="0" selection-end-line="127" selection-end-column="0" />
-              <folding>
-                <marker date="1542185676522" expanded="true" signature="1667:1700" placeholder="{...}" />
-                <marker date="1542185676522" expanded="true" signature="1724:1807" placeholder="{...}" />
-              </folding>
+            <state relative-caret-position="355">
+              <caret line="429" column="5" lean-forward="true" selection-start-line="429" selection-start-column="5" selection-end-line="429" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="navigation.yml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_data/navigation.yml">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/_sass/minimal-mistakes/_page.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
-              <caret line="0" column="12" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="12" />
-              <folding />
+            <state relative-caret-position="298">
+              <caret line="95" column="19" selection-start-line="95" selection-start-column="19" selection-end-line="95" selection-end-column="19" />
             </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ui-text.yml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_data/ui-text.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="14569" max-vertical-offset="21603">
-              <caret line="779" column="49" selection-start-line="779" selection-start-column="49" selection-end-line="779" selection-end-column="49" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="masthead.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_includes/masthead.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.7142856" vertical-offset="0" max-vertical-offset="741">
-              <caret line="4" column="12" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="82" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="2018-11-13-Guide-to-Reactive-for-Spring-MVC-2.markdown" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/_posts/2018-11-13-Guide-to-Reactive-for-Spring-MVC-2.markdown">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.19" vertical-offset="0" max-vertical-offset="2128">
-              <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="MultiMarkdownFxHtmlEditor">
-            <state />
-          </provider>
-          <provider editor-type-id="MultiMarkdownFxPreviewEditor">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_site/blogging/Guide-to-Reactive-for-Spring-MVC-2/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-48.17857" vertical-offset="0" max-vertical-offset="2071">
-              <caret line="71" column="31" selection-start-line="71" selection-start-column="31" selection-end-line="71" selection-end-column="31" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_config.yml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_config.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="171" max-vertical-offset="5605">
-              <caret line="19" column="30" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="2018-11-12-Guide-to-Reactive-for-Spring-MVC-1.markdown" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_posts/2018-11-12-Guide-to-Reactive-for-Spring-MVC-1.markdown">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.75" vertical-offset="0" max-vertical-offset="1596">
-              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="MultiMarkdownFxHtmlEditor">
-            <state />
-          </provider>
-          <provider editor-type-id="MultiMarkdownFxPreviewEditor">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="2017-02-20-ionic2-install.markdown" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_posts/2017-02-20-ionic2-install.markdown">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1216">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="6" selection-end-column="3" />
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="MultiMarkdownFxHtmlEditor">
-            <state />
-          </provider>
-          <provider editor-type-id="MultiMarkdownFxPreviewEditor">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="2017-02-19-using-ionic2-firebase3-intro.markdown" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_posts/2017-02-19-using-ionic2-firebase3-intro.markdown">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.357142" vertical-offset="393" max-vertical-offset="1482">
-              <caret line="33" column="65" selection-start-line="33" selection-start-column="65" selection-end-line="33" selection-end-column="65" />
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="MultiMarkdownFxHtmlEditor">
-            <state />
-          </provider>
-          <provider editor-type-id="MultiMarkdownFxPreviewEditor">
-            <state />
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>http:</find>
+      <find>skin</find>
+      <find>Links</find>
+      <find>minimal-mistakes/skins/</find>
+      <find>Sass</find>
+      <find>sass</find>
+      <find>main.scs</find>
+      <find>Your Name</find>
+      <find>2012-</find>
+      <find>page</find>
+      <find>type:</find>
+      <find>a:before</find>
+      <find>greedy</find>
+      <find>background: mix(#fff, $primary-color, 50%)</find>
+      <find>greedy-nav</find>
+      <find>pages</find>
+      <find>categor</find>
+      <find>category_archive</find>
+      <find>post</find>
+      <find>posts</find>
+      <find>_posts</find>
+      <find>underline</find>
+    </findStrings>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -188,97 +291,162 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
-    <option name="changedFiles">
+    <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/_posts/2018-11-12-Guide-to-Reactive-for-Spring-MVC.markdown" />
-        <option value="$PROJECT_DIR$/_includes/masthead.html" />
-        <option value="$PROJECT_DIR$/_data/navigation.yml" />
-        <option value="$PROJECT_DIR$/_config.yml" />
+        <option value="$USER_HOME$/Desktop/minimal-mistakes-4.13.0/assets/css/main.scss" />
+        <option value="$PROJECT_DIR$/_posts/2018-11-13-Guide-to-Reactive-for-Spring-MVC-2.markdown" />
         <option value="$PROJECT_DIR$/_posts/2018-11-12-Guide-to-Reactive-for-Spring-MVC-1.markdown" />
         <option value="$PROJECT_DIR$/_posts/2017-02-20-ionic2-install.markdown" />
         <option value="$PROJECT_DIR$/_posts/2017-02-19-using-ionic2-firebase3-intro.markdown" />
-        <option value="$PROJECT_DIR$/_posts/2018-11-13-Guide-to-Reactive-for-Spring-MVC-2.markdown" />
-        <option value="$PROJECT_DIR$/_site/blogging/Guide-to-Reactive-for-Spring-MVC-2/index.html" />
+        <option value="$PROJECT_DIR$/_sass/minimal-mistakes/skins/_mint.scss" />
+        <option value="$PROJECT_DIR$/_data/navigation.yml" />
+        <option value="$PROJECT_DIR$/Gemfile" />
+        <option value="$PROJECT_DIR$/_pages/404.md" />
+        <option value="$PROJECT_DIR$/_pages/about.md" />
+        <option value="$PROJECT_DIR$/_config.yml" />
+        <option value="$PROJECT_DIR$/_site/assets/css/main.css" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="32" />
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths>
+      <path value="$PROJECT_DIR$/package.json" />
+    </packageJsonPaths>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-133" />
+    <option name="y" value="204" />
     <option name="width" value="1936" />
     <option name="height" value="1056" />
-  </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
-    <OptionsSetting value="true" id="Add" />
-    <OptionsSetting value="true" id="Remove" />
-    <OptionsSetting value="true" id="Checkout" />
-    <OptionsSetting value="true" id="Update" />
-    <OptionsSetting value="true" id="Status" />
-    <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="0" id="Add" />
-    <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectReloadState">
     <option name="STATE" value="0" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
-      <flattenPackages />
-      <showMembers />
-      <showModules />
-      <showLibraryContents />
-      <hideEmptyPackages />
-      <abbreviatePackageNames />
-      <autoscrollToSource />
-      <autoscrollFromSource />
-      <sortByType />
+    <navigator proportions="" version="1">
+      <autoscrollToSource ProjectPane="true" />
+      <autoscrollFromSource ProjectPane="true" />
+      <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sungjun221.github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sungjun221.github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sungjun221.github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sungjun221.github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sungjun221.github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="_posts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
+          <expand>
+            <path>
+              <item name="sungjun221.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sungjun221.github.io" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sungjun221.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sungjun221.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="_data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sungjun221.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sungjun221.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="_layouts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sungjun221.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sungjun221.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="_pages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sungjun221.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sungjun221.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="_posts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sungjun221.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sungjun221.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="_sass" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sungjun221.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sungjun221.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="_sass" type="462c0819:PsiDirectoryNode" />
+              <item name="minimal-mistakes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sungjun221.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sungjun221.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="_sass" type="462c0819:PsiDirectoryNode" />
+              <item name="minimal-mistakes" type="462c0819:PsiDirectoryNode" />
+              <item name="skins" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sungjun221.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sungjun221.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="_site" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sungjun221.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sungjun221.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="_site" type="462c0819:PsiDirectoryNode" />
+              <item name="404" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sungjun221.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sungjun221.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="_site" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sungjun221.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sungjun221.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="_site" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sungjun221.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sungjun221.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sungjun221.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sungjun221.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
         </subPane>
       </pane>
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="FullScreen" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542208485997" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunManager">
-    <list size="0" />
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Workspace\github\sungjun221.github.io\_layouts" />
+    </key>
   </component>
-  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -286,33 +454,54 @@
     <task active="true" id="Default" summary="Default task">
       <changelist id="a0c2449d-a11b-4a66-908f-54010b82a87f" name="Default" comment="" />
       <created>1541999648080</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
       <updated>1541999648080</updated>
+      <workItem from="1542199238765" duration="4294000" />
+      <workItem from="1542206645881" duration="1839000" />
     </task>
     <servers />
   </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="6133000" />
+  </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="32" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28164557" sideWeight="0.7875" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.15364583" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" x="1942" y="111" width="360" height="893" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15677084" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28164557" sideWeight="0.2125" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="true" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32911393" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15991472" />
+      <window_info x="1942" y="111" width="360" height="893" id="Structure" order="1" weight="0.15364583" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Designer" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.7875" weight="0.28164557" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Changes" order="7" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.2125" side_tool="true" weight="0.28164557" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Thumbnails" order="11" weight="0.32911393" />
+      <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" auto_hide="true" content_ui="combo" id="Hierarchy" internal_type="SLIDING" order="2" type="SLIDING" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info anchor="right" id="Database" order="7" />
+      <window_info anchor="right" id="Maven Projects" order="8" />
     </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -325,122 +514,214 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
-  <component name="VcsManagerConfiguration">
-    <option name="myTodoPanelSettings">
-      <TodoPanelSettings />
-    </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager />
-  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/_site/index.html">
+    <entry file="file://$PROJECT_DIR$/_site/index.html" />
+    <entry file="file://$PROJECT_DIR$/_site/blogging/Guide-to-Reactive-for-Spring-MVC-2/index.html" />
+    <entry file="file://$PROJECT_DIR$/_includes/masthead.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.142858" vertical-offset="2185" max-vertical-offset="8246">
-          <caret line="127" column="0" selection-start-line="127" selection-start-column="0" selection-end-line="127" selection-end-column="0" />
-          <folding>
-            <marker date="1542185676522" expanded="true" signature="1667:1700" placeholder="{...}" />
-            <marker date="1542185676522" expanded="true" signature="1724:1807" placeholder="{...}" />
-          </folding>
+        <state relative-caret-position="76">
+          <caret line="4" column="12" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="82" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/masthead.html">
+    <entry file="file://$USER_HOME$/Desktop/minimal-mistakes-4.13.0/assets/css/main.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.7142856" vertical-offset="0" max-vertical-offset="741">
-          <caret line="4" column="12" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="82" />
-          <folding />
+        <state relative-caret-position="133">
+          <caret line="7" column="44" lean-forward="true" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2017-02-20-ionic2-install.markdown">
+      <provider editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="6" selection-end-column="3" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="76">
+            <caret line="4" selection-start-line="4" selection-end-line="4" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2017-02-19-using-ionic2-firebase3-intro.markdown">
+      <provider editor-type-id="text-editor">
+        <state>
+          <caret line="33" column="65" selection-start-line="33" selection-start-column="65" selection-end-line="33" selection-end-column="65" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="57">
+            <caret line="3" column="8" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/main.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="44" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_sass/minimal-mistakes/skins/_mint.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="30" lean-forward="true" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_sass/minimal-mistakes/skins/_dirt.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_sass/minimal-mistakes/skins/_default.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_sass/minimal-mistakes/_archive.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_sass/minimal-mistakes/_buttons.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_sass/minimal-mistakes/_footer.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" column="27" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/_data/navigation.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
-          <caret line="0" column="12" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="12" />
-          <folding />
+        <state relative-caret-position="209">
+          <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile.lock">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_pages/404.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="76">
+            <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_pages/about.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="133">
+            <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_layouts/home.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_layouts/posts.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="18" column="29" lean-forward="true" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/_data/ui-text.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="14569" max-vertical-offset="21603">
-          <caret line="779" column="49" selection-start-line="779" selection-start-column="49" selection-end-line="779" selection-end-column="49" />
-          <folding />
+        <state>
+          <caret line="510" column="37" lean-forward="true" selection-start-line="510" selection-start-column="37" selection-end-line="510" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_layouts/pages.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="23" column="66" lean-forward="true" selection-start-line="23" selection-start-column="66" selection-end-line="23" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/about.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="57">
+            <caret line="3" column="17" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="17" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2018-11-12-Guide-to-Reactive-for-Spring-MVC-1.markdown">
+      <provider editor-type-id="text-editor">
+        <state>
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="57">
+            <caret line="3" column="8" selection-start-line="3" selection-start-column="8" selection-end-line="4" selection-end-column="43" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2018-11-13-Guide-to-Reactive-for-Spring-MVC-2.markdown">
+      <provider editor-type-id="text-editor">
+        <state>
+          <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="304">
+            <caret line="16" column="4" lean-forward="true" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/_config.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="171" max-vertical-offset="5605">
-          <caret line="19" column="30" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
-          <folding />
+        <state relative-caret-position="567">
+          <caret line="279" column="15" lean-forward="true" selection-start-line="279" selection-start-column="15" selection-end-line="279" selection-end-column="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2018-11-12-Guide-to-Reactive-for-Spring-MVC-1.markdown">
+    <entry file="file://$PROJECT_DIR$/_site/assets/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.75" vertical-offset="0" max-vertical-offset="1596">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="MultiMarkdownFxHtmlEditor">
-        <state />
-      </provider>
-      <provider editor-type-id="MultiMarkdownFxPreviewEditor">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2017-02-20-ionic2-install.markdown">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1216">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="6" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="MultiMarkdownFxHtmlEditor">
-        <state />
-      </provider>
-      <provider editor-type-id="MultiMarkdownFxPreviewEditor">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2017-02-19-using-ionic2-firebase3-intro.markdown">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.357142" vertical-offset="393" max-vertical-offset="1482">
-          <caret line="33" column="65" selection-start-line="33" selection-start-column="65" selection-end-line="33" selection-end-column="65" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="MultiMarkdownFxHtmlEditor">
-        <state />
-      </provider>
-      <provider editor-type-id="MultiMarkdownFxPreviewEditor">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_site/blogging/Guide-to-Reactive-for-Spring-MVC-2/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-48.17857" vertical-offset="0" max-vertical-offset="2071">
-          <caret line="71" column="31" selection-start-line="71" selection-start-column="31" selection-end-line="71" selection-end-column="31" />
-          <folding />
+        <state relative-caret-position="95">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2018-11-13-Guide-to-Reactive-for-Spring-MVC-2.markdown">
+    <entry file="file://$PROJECT_DIR$/_sass/minimal-mistakes/_navigation.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.19" vertical-offset="0" max-vertical-offset="2128">
-          <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
-          <folding />
+        <state relative-caret-position="355">
+          <caret line="429" column="5" lean-forward="true" selection-start-line="429" selection-start-column="5" selection-end-line="429" selection-end-column="5" />
         </state>
       </provider>
-      <provider editor-type-id="MultiMarkdownFxHtmlEditor">
-        <state />
-      </provider>
-      <provider editor-type-id="MultiMarkdownFxPreviewEditor">
-        <state />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_sass/minimal-mistakes/_page.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="95" column="19" selection-start-line="95" selection-start-column="19" selection-end-line="95" selection-end-column="19" />
+        </state>
       </provider>
     </entry>
   </component>
 </project>
-

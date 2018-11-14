@@ -1,4 +1,4 @@
-source "http://rubygems.org"
+source "https://rubygems.org"
 
 gem "jekyll", "~> 3.5"
 gem "minimal-mistakes-jekyll"

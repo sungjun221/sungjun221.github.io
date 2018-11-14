@@ -1,8 +1,8 @@
 ---
 title: "Ionic2 + Firebase3로 빠르게 나만의 앱 만들기"
 categories: 
-  - blogging
-last_modified_at: 2017-02-19 12:56:00 +0900
+  - post
+last_modified_at: 2017-02-19T12:04:24-04:00
 toc: true
 ---
 
