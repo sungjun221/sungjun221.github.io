@@ -12,10 +12,10 @@
 
 theme                    : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "mint" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale                   : "ko-KR"
+locale                   : "ko"
 title                    : "sungjun221.github.io"
 title_separator          : "-"
 name                     : "sungjun221"
@@ -102,7 +102,7 @@ analytics:
 author:
   name             : "sungjun221"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am a developer."
+  bio              : "Developer"
   location         : "Seoul, South Korea"
   email            :
   links:
@@ -276,7 +276,7 @@ compress_html:
 defaults:
   # _posts
   - scope:
-      path: ""
+      path: "_pages"
       type: posts
     values:
       layout: single

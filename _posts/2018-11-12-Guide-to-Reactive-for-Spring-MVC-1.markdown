@@ -1,8 +1,9 @@
 ---
-layout: post
-title:  "Guide to 'Reactive' for Spring MVC Developers (1)"
-date:   2018-11-12 20:00:00 +0900
-categories: reactive spring java springmvc 리액티브 스프링 자바
+title: "Guide to 'Reactive' for Spring MVC Developers (1)"
+categories: 
+  - blogging
+last_modified_at: 2018-11-12 20:00:00 +0900
+toc: true
 ---
 
 최근 몇 년간 애플리케이션이 점점 커지고 복잡해지면서 Asynchronous, Non-Blocking I/O 기반의 Reactive System에 대한 관심이 높아지고 있습니다.

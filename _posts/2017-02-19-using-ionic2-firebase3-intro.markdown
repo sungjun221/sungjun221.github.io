@@ -1,8 +1,9 @@
 ---
-layout: post
-title:  "Ionic2 + Firebase3로 빠르게 나만의 앱 만들기"
-date:   2017-02-19 12:56:00 +0900
-categories: ionic angular firebase javascript
+title: "Ionic2 + Firebase3로 빠르게 나만의 앱 만들기"
+categories: 
+  - blogging
+last_modified_at: 2017-02-19 12:56:00 +0900
+toc: true
 ---
 
 개발자라면 나만의 앱을 하나씩 가지고 싶은 마음이 있을 겁니다.

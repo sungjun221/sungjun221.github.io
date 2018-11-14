@@ -1,9 +1,11 @@
 ---
-layout: post
-title:  "Guide to 'Reactive' for Spring MVC Developers (2)"
-date:   2018-11-13 20:00:00 +0900
-categories: reactive spring java springmvc 리액티브 스프링 자바
+title: "Guide to 'Reactive' for Spring MVC Developers (2)"
+categories: 
+  - blogging
+last_modified_at: 2018-11-13 20:00:00 +0900
+toc: true
 ---
+
 (현재 작성중인 글입니다. Ver.0.1.2)
 
 지난 글에서는 Spring에서 HTTP통신을 위해 기존에 사용하던 RestTemplate과 버전5부터 Reactive를 지원하기 위해 나온 WebClient를 살펴봤습니다. 이번에는 예제를 통해 이 둘이 어떻게 다르게 동작하는지 비교해 보겠습니다. 
@@ -69,7 +71,7 @@ public class Step1 {
 }
 ~~~
 그럼 실행을 해볼까요? 아래와 같은 로그가 찍힙니다.
-![Step1](image/path/url/image.png "Step1")  
+ (로그이미지)
 
 정직한 결과가 나왔습니다. 2초 * 3번의 호출이 되어 약 6초를 조금 넘는 결과가 나왔습니다. 
 응답이 올때까지 기다린 뒤 다시 요청하는 것을 알 수 있습니다.

@@ -1,8 +1,9 @@
 ---
-layout: post
-title:  "Ionic2 프로젝트 만들기"
-date:   2017-02-20 12:56:00 +0900
-categories: ionic angular javascript
+title: "Ionic2 프로젝트 만들기"
+categories: 
+  - blogging
+last_modified_at: 2017-02-20 12:56:00 +0900
+toc: true
 ---
 
 이번엔 ionic2를 설치해보고 실제 화면을 띄워보겠습니다.

@@ -2,7 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a0c2449d-a11b-4a66-908f-54010b82a87f" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\gsshop\github\sungjun221.github.io\_posts\2017-02-20-ionic2-install.markdown" afterPath="" />
+      <change type="DELETED" beforePath="C:\gsshop\github\sungjun221.github.io\_includes\disqus.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\gsshop\github\sungjun221.github.io\_includes\disqus_comments.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\gsshop\github\sungjun221.github.io\_includes\meta.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\gsshop\github\sungjun221.github.io\_includes\svg-icons.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\gsshop\github\sungjun221.github.io\_layouts\page.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\gsshop\github\sungjun221.github.io\_layouts\post.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\gsshop\github\sungjun221.github.io\_sass\_highlights.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\gsshop\github\sungjun221.github.io\_sass\_reset.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\gsshop\github\sungjun221.github.io\_sass\_svg-icons.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\gsshop\github\sungjun221.github.io\_sass\_variables.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\gsshop\github\sungjun221.github.io\images\404.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\gsshop\github\sungjun221.github.io\images\config.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\gsshop\github\sungjun221.github.io\images\first-post.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\gsshop\github\sungjun221.github.io\images\jekyll-logo.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\gsshop\github\sungjun221.github.io\images\jekyll-now-theme-screenshot.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\gsshop\github\sungjun221.github.io\images\step1.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\gsshop\github\sungjun221.github.io\style.scss" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2017-02-19-using-ionic2-firebase3-intro.markdown" afterPath="$PROJECT_DIR$/_posts/2017-02-19-using-ionic2-firebase3-intro.markdown" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2017-02-20-ionic2-install.markdown" afterPath="$PROJECT_DIR$/_posts/2017-02-20-ionic2-install.markdown" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2018-11-12-Guide-to-Reactive-for-Spring-MVC-1.markdown" afterPath="$PROJECT_DIR$/_posts/2018-11-12-Guide-to-Reactive-for-Spring-MVC-1.markdown" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2018-11-13-Guide-to-Reactive-for-Spring-MVC-2.markdown" afterPath="$PROJECT_DIR$/_posts/2018-11-13-Guide-to-Reactive-for-Spring-MVC-2.markdown" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_config.yml" afterPath="$PROJECT_DIR$/_config.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_data/navigation.yml" afterPath="$PROJECT_DIR$/_data/navigation.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/sungjun221.github.io.iml" afterPath="$PROJECT_DIR$/.idea/sungjun221.github.io.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="sungjun221.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,23 +50,130 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="2018-11-12-Guide-to-Reactive-for-Spring-MVC.markdown" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/_posts/2018-11-12-Guide-to-Reactive-for-Spring-MVC.markdown">
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_site/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.39845476" vertical-offset="0" max-vertical-offset="2508">
-              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+            <state vertical-scroll-proportion="-8.142858" vertical-offset="2185" max-vertical-offset="7638">
+              <caret line="127" column="0" selection-start-line="127" selection-start-column="0" selection-end-line="127" selection-end-column="0" />
+              <folding>
+                <marker date="1542185676522" expanded="true" signature="1667:1700" placeholder="{...}" />
+                <marker date="1542185676522" expanded="true" signature="1724:1807" placeholder="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="navigation.yml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_data/navigation.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
+              <caret line="0" column="12" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="12" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2017-02-20-ionic2-install - 복사본.markdown" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_posts/2017-02-20-ionic2-install - 복사본.markdown">
+      <file leaf-file-name="ui-text.yml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_data/ui-text.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1197">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="14569" max-vertical-offset="21603">
+              <caret line="779" column="49" selection-start-line="779" selection-start-column="49" selection-end-line="779" selection-end-column="49" />
               <folding />
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="masthead.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_includes/masthead.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-2.7142856" vertical-offset="0" max-vertical-offset="741">
+              <caret line="4" column="12" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="82" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2018-11-13-Guide-to-Reactive-for-Spring-MVC-2.markdown" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/_posts/2018-11-13-Guide-to-Reactive-for-Spring-MVC-2.markdown">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.19" vertical-offset="0" max-vertical-offset="2128">
+              <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="MultiMarkdownFxHtmlEditor">
+            <state />
+          </provider>
+          <provider editor-type-id="MultiMarkdownFxPreviewEditor">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_site/blogging/Guide-to-Reactive-for-Spring-MVC-2/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-48.17857" vertical-offset="0" max-vertical-offset="2071">
+              <caret line="71" column="31" selection-start-line="71" selection-start-column="31" selection-end-line="71" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_config.yml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_config.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="171" max-vertical-offset="5605">
+              <caret line="19" column="30" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2018-11-12-Guide-to-Reactive-for-Spring-MVC-1.markdown" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_posts/2018-11-12-Guide-to-Reactive-for-Spring-MVC-1.markdown">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-4.75" vertical-offset="0" max-vertical-offset="1596">
+              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="MultiMarkdownFxHtmlEditor">
+            <state />
+          </provider>
+          <provider editor-type-id="MultiMarkdownFxPreviewEditor">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2017-02-20-ionic2-install.markdown" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_posts/2017-02-20-ionic2-install.markdown">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1216">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="6" selection-end-column="3" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="MultiMarkdownFxHtmlEditor">
+            <state />
+          </provider>
+          <provider editor-type-id="MultiMarkdownFxPreviewEditor">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2017-02-19-using-ionic2-firebase3-intro.markdown" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_posts/2017-02-19-using-ionic2-firebase3-intro.markdown">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-8.357142" vertical-offset="393" max-vertical-offset="1482">
+              <caret line="33" column="65" selection-start-line="33" selection-start-column="65" selection-end-line="33" selection-end-column="65" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="MultiMarkdownFxHtmlEditor">
+            <state />
+          </provider>
+          <provider editor-type-id="MultiMarkdownFxPreviewEditor">
+            <state />
           </provider>
         </entry>
       </file>
@@ -59,6 +191,14 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/_posts/2018-11-12-Guide-to-Reactive-for-Spring-MVC.markdown" />
+        <option value="$PROJECT_DIR$/_includes/masthead.html" />
+        <option value="$PROJECT_DIR$/_data/navigation.yml" />
+        <option value="$PROJECT_DIR$/_config.yml" />
+        <option value="$PROJECT_DIR$/_posts/2018-11-12-Guide-to-Reactive-for-Spring-MVC-1.markdown" />
+        <option value="$PROJECT_DIR$/_posts/2017-02-20-ionic2-install.markdown" />
+        <option value="$PROJECT_DIR$/_posts/2017-02-19-using-ionic2-firebase3-intro.markdown" />
+        <option value="$PROJECT_DIR$/_posts/2018-11-13-Guide-to-Reactive-for-Spring-MVC-2.markdown" />
+        <option value="$PROJECT_DIR$/_site/blogging/Guide-to-Reactive-for-Spring-MVC-2/index.html" />
       </list>
     </option>
   </component>
@@ -157,6 +297,7 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28164557" sideWeight="0.7875" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.15364583" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" x="1942" y="111" width="360" height="893" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15677084" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -166,11 +307,10 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28164557" sideWeight="0.7875" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="true" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32911393" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -194,20 +334,111 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/_posts/2017-02-20-ionic2-install - 복사본.markdown">
+    <entry file="file://$PROJECT_DIR$/_site/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1197">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="-8.142858" vertical-offset="2185" max-vertical-offset="8246">
+          <caret line="127" column="0" selection-start-line="127" selection-start-column="0" selection-end-line="127" selection-end-column="0" />
+          <folding>
+            <marker date="1542185676522" expanded="true" signature="1667:1700" placeholder="{...}" />
+            <marker date="1542185676522" expanded="true" signature="1724:1807" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/masthead.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.7142856" vertical-offset="0" max-vertical-offset="741">
+          <caret line="4" column="12" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="82" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2018-11-12-Guide-to-Reactive-for-Spring-MVC.markdown">
+    <entry file="file://$PROJECT_DIR$/_data/navigation.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.39845476" vertical-offset="0" max-vertical-offset="2508">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
+          <caret line="0" column="12" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="12" />
           <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_data/ui-text.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="14569" max-vertical-offset="21603">
+          <caret line="779" column="49" selection-start-line="779" selection-start-column="49" selection-end-line="779" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="171" max-vertical-offset="5605">
+          <caret line="19" column="30" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2018-11-12-Guide-to-Reactive-for-Spring-MVC-1.markdown">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.75" vertical-offset="0" max-vertical-offset="1596">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="MultiMarkdownFxHtmlEditor">
+        <state />
+      </provider>
+      <provider editor-type-id="MultiMarkdownFxPreviewEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2017-02-20-ionic2-install.markdown">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1216">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="6" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="MultiMarkdownFxHtmlEditor">
+        <state />
+      </provider>
+      <provider editor-type-id="MultiMarkdownFxPreviewEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2017-02-19-using-ionic2-firebase3-intro.markdown">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.357142" vertical-offset="393" max-vertical-offset="1482">
+          <caret line="33" column="65" selection-start-line="33" selection-start-column="65" selection-end-line="33" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="MultiMarkdownFxHtmlEditor">
+        <state />
+      </provider>
+      <provider editor-type-id="MultiMarkdownFxPreviewEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_site/blogging/Guide-to-Reactive-for-Spring-MVC-2/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-48.17857" vertical-offset="0" max-vertical-offset="2071">
+          <caret line="71" column="31" selection-start-line="71" selection-start-column="31" selection-end-line="71" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2018-11-13-Guide-to-Reactive-for-Spring-MVC-2.markdown">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.19" vertical-offset="0" max-vertical-offset="2128">
+          <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="MultiMarkdownFxHtmlEditor">
+        <state />
+      </provider>
+      <provider editor-type-id="MultiMarkdownFxPreviewEditor">
+        <state />
       </provider>
     </entry>
   </component>
