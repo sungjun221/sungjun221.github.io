@@ -1,7 +1,10 @@
 ---
 title: "Ionic2 + Firebase3로 빠르게 나만의 앱 만들기"
-categories: 
-  - post
+tag: 
+  - JavaScript
+  - Mobile App
+  - Ionic
+  - Angular
 last_modified_at: 2017-02-19T12:04:24-04:00
 toc: true
 ---

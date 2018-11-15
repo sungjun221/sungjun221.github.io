@@ -1,7 +1,9 @@
 ---
 title: "Guide to 'Reactive' for Spring MVC Developers (2)"
-categories: 
-  - post
+tags:
+  - Java
+  - Spring
+  - Reactive  
 last_modified_at: 2018-11-13T12:04:24-04:00
 toc: true
 ---

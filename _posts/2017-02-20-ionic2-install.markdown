@@ -1,7 +1,10 @@
 ---
 title: "Ionic2 프로젝트 만들기"
-categories: 
-  - post
+tag: 
+  - JavaScript
+  - Mobile App
+  - Ionic
+  - Angular
 last_modified_at: 2017-02-20T12:04:24-04:00
 toc: true
 ---
