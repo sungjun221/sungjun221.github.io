@@ -1,8 +1,8 @@
 ---
 title: "Ionic2 프로젝트 만들기"
 categories: 
-  - blogging
-last_modified_at: 2017-02-20 12:56:00 +0900
+  - post
+last_modified_at: 2017-02-20T12:04:24-04:00
 toc: true
 ---
 

@@ -1,8 +1,8 @@
 ---
 title: "Guide to 'Reactive' for Spring MVC Developers (2)"
 categories: 
-  - blogging
-last_modified_at: 2018-11-13 20:00:00 +0900
+  - post
+last_modified_at: 2018-11-13T12:04:24-04:00
 toc: true
 ---
 
