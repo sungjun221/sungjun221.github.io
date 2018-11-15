@@ -53,6 +53,6 @@ Ionic2 프로젝트 구조
 
 - - -
 * 참고
-    - [http://ionicframework.com/docs/v2/intro/installation/](http://ionicframework.com/docs/v2/intro/installation/)
-    - [http://gonehybrid.com/build-your-first-mobile-app-with-ionic-2-angular-2-part-5/](http://gonehybrid.com/build-your-first-mobile-app-with-ionic-2-angular-2-part-5/)
+    - [Ionic2 인스톨 가이드](http://ionicframework.com/docs/v2/intro/installation/)
+    - [Build Your First Mobile App With Ionic 2](http://gonehybrid.com/build-your-first-mobile-app-with-ionic-2-angular-2-part-5/)
 
