@@ -101,7 +101,7 @@ analytics:
 # Site Author
 author:
   name             : "sungjun221"
-  avatar           : "https://avatars0.githubusercontent.com/u/4060030?v=3&s=460" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "https://avatars0.githubusercontent.com/u/4060030?v=3&s=460"
   bio              : "Developer"
   location         : "Seoul, South Korea"
   email            : "sungjun221@gmail.com"
@@ -253,15 +253,15 @@ tag_archive:
   path: /tags/
 # https://github.com/jekyll/jekyll-archives
 jekyll-archives:
-   enabled:
-     - categories
-     - tags
-   layouts:
-     category: archive-taxonomy
-     tag: archive-taxonomy
-   permalinks:
-     category: /categories/:name/
-     tag: /tags/:name/
+ enabled:
+   - categories
+   - tags
+ layouts:
+   category: archive-taxonomy
+   tag: archive-taxonomy
+ permalinks:
+   category: /categories/:name/
+   tag: /tags/:name/
 
 
 # HTML Compression
@@ -271,23 +271,24 @@ compress_html:
   ignore:
     envs: development
 
+
 # Defaults
 defaults:
-  # _posts
-  - scope:
-      path: "_pages"
-      type: posts
-    values:
-      layout: single
-      author_profile: true
-      read_time: true
-      comments: true
-      share: true
-      related: true
-  # _pages
-  - scope:
-      path: ""
-      type: pages
-    values:
-      layout: single
-      author_profile: true
+# _posts
+- scope:
+    path: ""
+    type: posts
+  values:
+    layout: single
+    author_profile: true
+    read_time: true
+    comments: # true
+    share: true
+    related: true
+# _pages
+- scope:
+    path: ""
+    type: pages
+  values:
+    layout: single
+    author_profile: true
