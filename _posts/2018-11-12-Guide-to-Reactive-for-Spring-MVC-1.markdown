@@ -7,7 +7,6 @@ tags:
 last_modified_at: 2018-11-12T12:04:24-04:00
 toc: true
 ---
-(작성중인 글입니다. Ver 0.1.1)
 
 최근 몇 년간 애플리케이션은 점점 커지고 복잡해졌습니다. 그래서 요청을 보내면 응답이 올 때까지 대기하고 있는 기존의 Synchronous, Blocking I/O에 기반한 시스템으로는 감당하기 어려운 상황도 나오고 있습니다.
 
@@ -71,6 +70,23 @@ Servlet 3.0, Spring 3.2 이상의 환경이라면 Spring MVC에서도 DeferredRe
 Reactive Client for HTTP in Spring 5
 -
 이번엔 Spring 5버전부터 등장한 HTTP 통신을 위한 Reactive 클라이언트를 살펴보겠습니다. 겸사겸사 그동안 활약했던 RestTemplate도 살펴보구요.
+
+### RestTemplate
+Spring 세계에서 오랫동안 우리를 지원해준 든든한 이름입니다. 손쉽게 REST클라이언트 개발을 할 수 있도록 도와주는 템플릿입니다. Java 1.5 당시에 소개되어 지난 10년간 수많은 애플리케이션에서 활약해왔습니다. RestTemplate은 Sync, Blocking 기반입니다. 
+
+<br>
+
+### 지난 10년간의 변화
+그렇다면 이렇게 잘 사용해온 RestTemplate을 놔두고 Spring개발진들은 왜 새로운 HTTP 클라이언트를 개발하게 되었을까요? 이를 위해선 지난 10년간의 변화를 살펴봐야합니다.
+
+먼저, 새로운 구성요소를 가진 Java 8이 발표되었습니다. 람다와 스트림이 등장했고 함수형 프로그래밍을 적극적으로 지원하게 되었습니다.
+
+하드웨어쪽은 어떨까요? 더 이상 무어의 법칙은 유효하지 않게 되었습니다. 하드웨어의 지속적이고 빠른 성장은 언젠가부터 정체되기 시작했습니다. 더 이상 하드웨어의 발전에 기댄 성능향상을 기대할 수 없게 되었습니다. 더욱이 같은 기간동안 애플리케이션은 더욱 거대하고 복잡해졌습니다.
+
+<br>
+
+### 새롭게 등장한 WebClient
+그래서 Spring 개발진들은 5버전부터 WebClient를 선보였습니다. Async, Non-Blocking I/O를 기반으로 합니다. RestTemplate과는 정반대의 접근방향입니다. Reactive하고 선언적(Declaritive)이며 Streaming을 활용합니다. 그럼 다음 2편에서 샘플예제를 실행해보며 WebClient와 RestTemplate간의 차이점을 살펴보겠습니다.
 
 <br>
 
