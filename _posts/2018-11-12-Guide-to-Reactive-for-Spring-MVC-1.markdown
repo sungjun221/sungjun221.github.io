@@ -7,7 +7,10 @@ tags:
 last_modified_at: 2018-11-12T12:04:24-04:00
 toc: true
 ---
+Reactive 지원을 시작한 Spring
+-
 
+![SpringOne Platform 2018](https://user-images.githubusercontent.com/4060030/48657448-3fa9d200-ea74-11e8-86f5-250669140534.png "SpringOne Platform 2018")
 최근 몇 년간 애플리케이션은 점점 커지고 복잡해졌습니다. 그래서 요청을 보내면 응답이 올 때까지 대기하고 있는 기존의 Synchronous, Blocking I/O에 기반한 시스템으로는 감당하기 어려운 상황도 나오고 있습니다.
 
 그래서 최근에는 요청을 보내고 자기 할 일은 따로 하는 Asynchronous, Non-Blocking I/O에 기반한 시스템에 대한 관심이 커지고 있습니다. 이것이 바로 Reactive Programming입니다.
