@@ -19,6 +19,7 @@ RestTemplate을 이용한 호출 예
 <br>
 
 서버프로그램입니다. Person의 데이터를 Map에 입력해두고 호출이 오면 전송합니다. 모든 호출에 Delay를 주어 네트워크 비용 등을 반영합니다.
+
 ~~~java
 @Bean
 public RouterFunction<?> routes() {
@@ -51,6 +52,7 @@ public RouterFunction<?> routes() {
 <br>
 
 그럼 이번엔 RestTemplte을 이용하여 호출하는 클라이언트입니다. delay 파라미터에 값을 넘겨 호출마다 2초간 딜레이를 줍니다. 그럼 실행해 볼까요?
+
 ~~~java
 public class Step1 {
   private static final Logger logger = LoggerFactory.getLogger(Step1.class);
@@ -63,7 +65,7 @@ public class Step1 {
 
   public static void main(String[] args) {
     Instant start = Instant.now();
-    for (int i = 1; i <= 3; i++) {
+    for (int i = 1; i <= 5; i++) {
       restTemplate.getForObject("/person/{id}", Person.class, i);
     }
     logTime(start);
@@ -76,15 +78,23 @@ public class Step1 {
 ~~~
 
 - 실행결과
-![RestTemplate Example](https://user-images.githubusercontent.com/4060030/48669593-48210c00-eb4b-11e8-9b28-dbed20134af2.png "RestTemplate Example")
 
-참 정직한 결과가 나왔습니다. 호출마다 약 2초간씩 3번의 호출이 반복되어 약 6초를 조금 넘는 결과가 나왔습니다. 응답이 올 때까지 대기한 후 다음 호출을 했기 때문입니다. 
+![RestTemplate Example](https://user-images.githubusercontent.com/4060030/48671555-597b1000-eb6d-11e8-8a5f-ef2dd6fb3f67.png "RestTemplate Example")
+
+참 정직한 결과가 나왔습니다. 호출마다 약 2초간씩 5번의 호출이 반복되어 약 10초를 조금 넘는 결과가 나왔습니다. 응답이 올 때까지 대기한 후 다음 호출을 했기 때문입니다. 
 
 <br>
+<br>
 
-그럼 이번엔 WebClient로 호출하는 예제를 살펴보겠습니다. 참고로 예제의 마지막 부분에 호출한 block()은 WebFlux에서 가능하면 사용하지 말아야 할 메소드입니다. Non-Blocking I/O 기반인 WebFlux에서 block() 메소드를 호출하면 WebFlux를 사용하는 의미가 없기 때문입니다. 
+WebClient를 이용한 호출 예
+-
 
-예제에서 사용한 이유는, WebClient를 사용할 때 호출 뒤 어떤 행동을 할지 기술하지 않으면 실제 호출이 일어나지 않기 때문입니다. block()을 사용하여 실제 호출이 발생하도록 합니다. block()을 빼면 아무런 호출을 하지 않습니다. 그럼 실행해보겠습니다.
+### WebClient를 이용한 호출 예 1
+
+그럼 이번엔 WebClient로 호출하는 예제를 살펴보겠습니다. 참고로 예제의 마지막 부분에 호출한 block 메소드는 WebFlux에서 가능하면 사용하지 말아야 할 메소드입니다. Non-Blocking I/O 기반인 WebFlux에서 block 메소드를 호출하면 WebFlux를 사용하는 의미가 없기 때문입니다. 
+
+예제에서 사용한 이유는 비동기로 구독(Subscribe)하여 호출하면 비동기답게 호출만 하고 바로 돌아와버리기 때문입니다. 서버에 가서 2초간 딜레이를 받고 돌아오는 과정이 측정이 되지 않습니다. 그럼 예제의 내용대로 실행해보겠습니다. 
+
 ~~~java
 public class Step2a {
   private static final Logger logger = LoggerFactory.getLogger(Step2a.class);
@@ -93,7 +103,7 @@ public class Step2a {
   public static void main(String[] args) {
     Instant start = Instant.now();
 
-    for (int i = 1; i <= 3; i++) {
+    for (int i = 1; i <= 5; i++) {
       client.get().uri("/person/{id}", i)
           .retrieve()
           .bodyToMono(Person.class)
@@ -102,18 +112,110 @@ public class Step2a {
 
     logTime(start);
   }
+  // ...
 }
 ~~~
 
 - 실행결과
-![WebClient Example 01](https://user-images.githubusercontent.com/4060030/48669710-769fe680-eb4d-11e8-934d-bd49f142aff7.png "WebCLient Example 01")
+
+![WebClient Example 01](https://user-images.githubusercontent.com/4060030/48671542-17ea6500-eb6d-11e8-9f8e-edf83e46df7e.png "WebCLient Example 01")
 
 흠..? 뭔가 이상합니다. 
 
+<br>
 
+### WebClient를 이용한 호출 예 2
+
+블라블라
+
+~~~java
+public class Step2b {
+  // ...
+  public static void main(String[] args) {
+    Instant start = Instant.now();
+
+    List<Mono<Person>> list = Stream.of(1, 2, 3, 4, 5)
+        .map(i -> client.get().uri("/person/{id}", i)
+                .retrieve()
+                .bodyToMono(Person.class))
+        .collect(Collectors.toList());
+
+    Mono.when(list).block();
+    logTime(start);
+  }
+  // ...
+}
+~~~
+
+블라블라
+
+- 실행결과
+
+![WebClient Example 02](https://user-images.githubusercontent.com/4060030/48671443-a4942380-eb6b-11e8-84aa-56cf5ab3166f.png "WebCLient Example 02")
+
+<br>
+
+### WebClient를 이용한 호출 예 3
+
+~~~java
+public class Step2c {
+  // ...
+  public static void main(String[] args) {
+    Instant start = Instant.now();
+
+    Flux.range(1, 5)
+        .flatMap(i -> client.get().uri("/person/{id}", i)
+                .retrieve()
+                .bodyToMono(Person.class))
+        .blockLast();
+    logTime(start);
+  }
+  // ...
+}
+~~~
+
+블라블라
+
+- 실행결과
+
+![WebClient Example 03](https://user-images.githubusercontent.com/4060030/48671483-38fe8600-eb6c-11e8-83d9-6bbbb2c68ae2.png "WebClient Example 03")
+
+<br>
+
+### WebClient를 이용한 호출 예 4
+
+블라블라
+
+~~~java
+public class Step2e {
+  // ...
+  public static void main(String[] args) {
+    Instant start = Instant.now();
+
+    Flux.range(1, 5)
+        .flatMap(i -> client.get().uri("/person/{id}", i)
+            .retrieve()
+            .bodyToMono(Person.class)
+            .flatMap(person -> client.get().uri("/person/{id}/hobby", i)
+                .retrieve()
+                .bodyToMono(Hobby.class)))
+        .blockLast();
+    logTime(start);
+  }
+  // ...
+}
+~~~
+
+블라블라
+
+- 실행결과
+
+![WebClient Example 04](https://user-images.githubusercontent.com/4060030/48671588-005fac00-eb6e-11e8-89a8-baae641fae6d.png "WebClient Example 04")
+
+블라블라
 
 <br>
 
 - - -
 * 참고
-    - [SpringOne Platform 2018 - Guide to 'Reactive' for Spring MVC Developers](https://content.pivotal.io/springone-platform-2018/guide-to-reactive-for-spring-mvc-developers)
+  - [SpringOne Platform 2018 - Guide to 'Reactive' for Spring MVC Developers](https://content.pivotal.io/springone-platform-2018/guide-to-reactive-for-spring-mvc-developers)

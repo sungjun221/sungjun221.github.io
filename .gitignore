@@ -7,6 +7,7 @@
 .jekyll-metadata
 .sass-cache
 .iml
+package-lock.json
 _asset_bundler_cache
 _site
 codekit-config.json

@@ -6,6 +6,8 @@ tags:
 last_modified_at: 2018-11-18T12:04:24-04:00
 toc: true
 ---
+> 현재 작성중인 글입니다.
+
 구조 분해 할당(Destructuring assignment)
 -
 배열이나 객체의 속성을 해체하여 그 값을 개별 변수에 담을 수 있게 하는 자바스크립트 표현식(expression)입니다.
