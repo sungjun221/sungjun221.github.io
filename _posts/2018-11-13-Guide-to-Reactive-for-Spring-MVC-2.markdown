@@ -75,7 +75,7 @@ public class Step1 {
 }
 ~~~
 
-#### 실행결과
+#### [실행결과]
 
 ![RestTemplate Example](https://user-images.githubusercontent.com/4060030/48671555-597b1000-eb6d-11e8-8a5f-ef2dd6fb3f67.png "RestTemplate Example")
 
@@ -114,7 +114,7 @@ public class Step2a {
 }
 ~~~
 
-#### 실행결과
+#### [실행결과]
 
 ![WebClient Example 01](https://user-images.githubusercontent.com/4060030/48671542-17ea6500-eb6d-11e8-9f8e-edf83e46df7e.png "WebCLient Example 01")
 
@@ -143,7 +143,7 @@ public class Step2b {
 }
 ~~~
 
-#### 실행결과
+#### [실행결과]
 
 ![WebClient Example 02](https://user-images.githubusercontent.com/4060030/48671443-a4942380-eb6b-11e8-84aa-56cf5ab3166f.png "WebCLient Example 02")
 
@@ -168,7 +168,7 @@ public class Step2c {
 }
 ~~~
 
-#### 실행결과
+#### [실행결과]
 
 ![WebClient Example 03](https://user-images.githubusercontent.com/4060030/48671483-38fe8600-eb6c-11e8-83d9-6bbbb2c68ae2.png "WebClient Example 03")
 
@@ -198,7 +198,7 @@ public class Step2e {
 }
 ~~~
 
-#### 실행결과
+#### [실행결과]
 
 ![WebClient Example 04](https://user-images.githubusercontent.com/4060030/48671588-005fac00-eb6e-11e8-89a8-baae641fae6d.png "WebClient Example 04")
 
