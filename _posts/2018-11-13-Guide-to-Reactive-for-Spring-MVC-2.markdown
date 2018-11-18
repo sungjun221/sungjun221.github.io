@@ -9,16 +9,16 @@ toc: true
 ---
 > 현재 작성중인 글입니다.
 
-RestTemplate을 이용한 호출 예
--
-
 지난 글에 이어 이번에는 RestTemplate과 WebClient의 차이점을 예제를 통해 살펴보겠습니다. 예제는 간단한 서버를 하나 띄우고, 클라이언트에서 각각 RestTemplate과 WebClient로 호출을 해보는 겁니다. 예제는 아래 Github Repository에서도 다운 받으실 수 있으니 참고해주세요. Spring Boot로 구성되어 있어 Maven Update만 하면 바로 테스트 해보실 수 있습니다.
 
 - [Demo Github Repository](https://github.com/sungjun221/reactive-for-webmvc)
 
 <br>
 
-서버프로그램입니다. Person의 데이터를 Map에 입력해두고 호출이 오면 전송합니다. 모든 호출에 Delay를 주어 네트워크 비용 등을 반영합니다.
+RestTemplate을 이용한 호출 예
+-
+
+먼저 서버프로그램입니다. Person의 데이터를 Map에 입력해두고 호출이 오면 전송합니다. 모든 호출에 Delay를 주어 네트워크 비용 등을 반영합니다.
 
 ~~~java
 @Bean
@@ -49,8 +49,6 @@ public RouterFunction<?> routes() {
 }
 ~~~
 
-<br>
-
 그럼 이번엔 RestTemplte을 이용하여 호출하는 클라이언트입니다. delay 파라미터에 값을 넘겨 호출마다 2초간 딜레이를 줍니다. 그럼 실행해 볼까요?
 
 ~~~java
@@ -77,7 +75,7 @@ public class Step1 {
 }
 ~~~
 
-- 실행결과
+#### 실행결과
 
 ![RestTemplate Example](https://user-images.githubusercontent.com/4060030/48671555-597b1000-eb6d-11e8-8a5f-ef2dd6fb3f67.png "RestTemplate Example")
 
@@ -116,13 +114,11 @@ public class Step2a {
 }
 ~~~
 
-- 실행결과
+#### 실행결과
 
 ![WebClient Example 01](https://user-images.githubusercontent.com/4060030/48671542-17ea6500-eb6d-11e8-9f8e-edf83e46df7e.png "WebCLient Example 01")
 
 흠..? 뭔가 이상합니다. 
-
-<br>
 
 ### WebClient를 이용한 호출 예 2
 
@@ -147,13 +143,11 @@ public class Step2b {
 }
 ~~~
 
-블라블라
-
-- 실행결과
+#### 실행결과
 
 ![WebClient Example 02](https://user-images.githubusercontent.com/4060030/48671443-a4942380-eb6b-11e8-84aa-56cf5ab3166f.png "WebCLient Example 02")
 
-<br>
+블라블라
 
 ### WebClient를 이용한 호출 예 3
 
@@ -174,13 +168,11 @@ public class Step2c {
 }
 ~~~
 
-블라블라
-
-- 실행결과
+#### 실행결과
 
 ![WebClient Example 03](https://user-images.githubusercontent.com/4060030/48671483-38fe8600-eb6c-11e8-83d9-6bbbb2c68ae2.png "WebClient Example 03")
 
-<br>
+블라블라
 
 ### WebClient를 이용한 호출 예 4
 
@@ -206,9 +198,7 @@ public class Step2e {
 }
 ~~~
 
-블라블라
-
-- 실행결과
+#### 실행결과
 
 ![WebClient Example 04](https://user-images.githubusercontent.com/4060030/48671588-005fac00-eb6e-11e8-89a8-baae641fae6d.png "WebClient Example 04")
 
