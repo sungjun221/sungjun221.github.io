@@ -29,8 +29,9 @@ console.log(rest); //{c: 30, d: 40}
 개선된 객체 리터럴(enhanced object literal)
 -
 
-- 리터럴 표기법(literal notation)이란? 
-  - 객체를 생성하는 방법은 new Object, Object.create와 리터럴 표기법이 있습니다. 리터럴 표기법은 new를 생략하여 객체를 생성하는 것입니다. 내부적으로는 new Object와 동일하게 동작하나 더 간결한 코드를 작성할 수 있습니다.
+- 리터럴 표기법(literal notation)이란?
+ 
+객체를 생성하는 방법은 new Object, Object.create와 리터럴 표기법이 있습니다. 리터럴 표기법은 new를 생략하여 객체를 생성하는 것입니다. 내부적으로는 new Object와 동일하게 동작하나 더 간결한 코드를 작성할 수 있습니다.
 ```javascript
 var str = 'sungjun'  // var str = new String('sungjun');
 var num = 221;       // var num = new Number(221);
@@ -72,6 +73,9 @@ getOrder("김성준", "냉장고", 1000000);
 
 스프레드 연산자 (Spread Operator)
 -
+
+<br>
+<br>
 
 프라미스 (Promise)
 -
