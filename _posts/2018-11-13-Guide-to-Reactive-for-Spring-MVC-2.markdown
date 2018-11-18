@@ -7,17 +7,18 @@ tags:
 last_modified_at: 2018-11-13T12:04:24-04:00
 toc: true
 ---
+> 현재 작성중인 글입니다.
 
-(현재 작성중인 글입니다. Ver.0.1.2)
+RestTemplate을 이용한 호출 예
+-
 
-지난 글에서는 Spring에서 HTTP통신을 위해 기존에 사용하던 RestTemplate과 버전5부터 Reactive를 지원하기 위해 나온 WebClient를 살펴봤습니다. 이번에는 예제를 통해 이 둘이 어떻게 다르게 동작하는지 비교해 보겠습니다. 
-
-예제는 서버 프로그램을 하나 띄우고, 클라이언트에서 각각 RestTemplate과 WebClient로 HTTP콜을 해보는 것입니다. 예제는 아래 Github Repository에서 다운 받으실 수 있어요. Spring Boot로 구성되어 Maven Update만 하시면 바로 테스트 해보실 수 있습니다. 
+지난 글에 이어 이번에는 RestTemplate과 WebClient의 차이점을 예제를 통해 살펴보겠습니다. 예제는 간단한 서버를 하나 띄우고, 클라이언트에서 각각 RestTemplate과 WebClient로 호출을 해보는 겁니다. 예제는 아래 Github Repository에서도 다운 받으실 수 있으니 참고해주세요. Spring Boot로 구성되어 있어 Maven Update만 하면 바로 테스트 해보실 수 있습니다.
 
 - [Demo Github Repository](https://github.com/sungjun221/reactive-for-webmvc)
 
 <br>
-먼저 서버프로그램은 간단한 구성입니다. Person의 데이터를 Map에 입력해두고 호출이 오면 전송합니다. 모든 호출에 Delay를 주어 네트워크 비용 등을 반영합니다.
+
+서버프로그램입니다. Person의 데이터를 Map에 입력해두고 호출이 오면 전송합니다. 모든 호출에 Delay를 주어 네트워크 비용 등을 반영합니다.
 ~~~java
 @Bean
 public RouterFunction<?> routes() {
@@ -48,7 +49,8 @@ public RouterFunction<?> routes() {
 ~~~
 
 <br>
-그럼 이번엔 RestTemplate을 이용해 HTTP콜을 하는 클라이언트를 작성합니다. delay 파라미터에 값을 넘겨 2초간 딜레이를 줍니다.
+
+그럼 이번엔 RestTemplte을 이용하여 호출하는 클라이언트입니다. delay 파라미터에 값을 넘겨 호출마다 2초간 딜레이를 줍니다. 그럼 실행해 볼까요?
 ~~~java
 public class Step1 {
   private static final Logger logger = LoggerFactory.getLogger(Step1.class);
@@ -72,35 +74,43 @@ public class Step1 {
   }
 }
 ~~~
-그럼 실행을 해볼까요? 아래와 같은 로그가 찍힙니다.
- (로그이미지)
 
-정직한 결과가 나왔습니다. 2초 * 3번의 호출이 되어 약 6초를 조금 넘는 결과가 나왔습니다. 
-응답이 올때까지 기다린 뒤 다시 요청하는 것을 알 수 있습니다.
+- 실행결과
+![RestTemplate Example](https://user-images.githubusercontent.com/4060030/48669593-48210c00-eb4b-11e8-9b28-dbed20134af2.png "RestTemplate Example")
+
+참 정직한 결과가 나왔습니다. 호출마다 약 2초간씩 3번의 호출이 반복되어 약 6초를 조금 넘는 결과가 나왔습니다. 응답이 올 때까지 대기한 후 다음 호출을 했기 때문입니다. 
 
 <br>
-그럼 이번엔 WebClient를 이용해보겠습니다.
+
+그럼 이번엔 WebClient로 호출하는 예제를 살펴보겠습니다. 참고로 예제의 마지막 부분에 호출한 block()은 WebFlux에서 가능하면 사용하지 말아야 할 메소드입니다. Non-Blocking I/O 기반인 WebFlux에서 block() 메소드를 호출하면 WebFlux를 사용하는 의미가 없기 때문입니다. 
+
+예제에서 사용한 이유는, WebClient를 사용할 때 호출 뒤 어떤 행동을 할지 기술하지 않으면 실제 호출이 일어나지 않기 때문입니다. block()을 사용하여 실제 호출이 발생하도록 합니다. block()을 빼면 아무런 호출을 하지 않습니다. 그럼 실행해보겠습니다.
 ~~~java
-public class Step2 {
-  private static final Logger logger = LoggerFactory.getLogger(Step2.class);
+public class Step2a {
+  private static final Logger logger = LoggerFactory.getLogger(Step2a.class);
   private static WebClient client = WebClient.create("http://localhost:8081?delay=2");
 
   public static void main(String[] args) {
     Instant start = Instant.now();
+
     for (int i = 1; i <= 3; i++) {
       client.get().uri("/person/{id}", i)
           .retrieve()
           .bodyToMono(Person.class)
-          .break();
+          .block();
     }
-    logTime(start);
-  }
 
-  private static void logTime(Instant start) {
-    logger.debug("Elapsed time: " + Duration.between(start, Instant.now()).toMillis() + "ms");
+    logTime(start);
   }
 }
 ~~~
+
+- 실행결과
+![WebClient Example 01](https://user-images.githubusercontent.com/4060030/48669710-769fe680-eb4d-11e8-934d-bd49f142aff7.png "WebCLient Example 01")
+
+흠..? 뭔가 이상합니다. 
+
+
 
 <br>
 

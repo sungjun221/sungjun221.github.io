@@ -6,7 +6,7 @@ tags:
 last_modified_at: 2018-11-18T12:04:24-04:00
 toc: true
 ---
-구조 분해 할당(destructuring assignment)
+구조 분해 할당(Destructuring assignment)
 -
 배열이나 객체의 속성을 해체하여 그 값을 개별 변수에 담을 수 있게 하는 자바스크립트 표현식(expression)입니다.
 ```javascript
@@ -26,7 +26,7 @@ console.log(rest); //{c: 30, d: 40}
 <br>
 <br>
 
-개선된 객체 리터럴(enhanced object literal)
+개선된 객체 리터럴(Enhanced object literal)
 -
 
 - 리터럴 표기법(literal notation)이란?
