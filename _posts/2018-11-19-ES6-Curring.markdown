@@ -1,5 +1,5 @@
 ---
-title: "ES6 - Currying"
+title: "ES6 Currying"
 tags:
   - JavaScript
   - ES6
