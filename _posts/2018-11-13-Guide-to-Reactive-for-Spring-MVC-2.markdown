@@ -74,7 +74,7 @@ public class Step1 {
 }
 ~~~
 
-#### [실행결과]
+### [실행결과]
 
 ![RestTemplate Example](https://user-images.githubusercontent.com/4060030/48671555-597b1000-eb6d-11e8-8a5f-ef2dd6fb3f67.png "RestTemplate Example")
 
@@ -115,7 +115,7 @@ public class Step2a {
 
 #### [실행결과]
 
-![WebClient Example 01](https://user-images.githubusercontent.com/4060030/48671542-17ea6500-eb6d-11e8-9f8e-edf83e46df7e.png "WebCLient Example 01")
+![WebClient Example 01](https://user-images.githubusercontent.com/4060030/48671542-17ea6500-eb6d-11e8-9f8e-edf83e46df7e.png "WebClient Example 01")
 
 ..?? 뭔가 이상합니다. 비동기 호출을 했으니 동기호출했을 때보다 좀 더 나은 결과를 기대했는데 별반 다르지 않습니다. 로그를 살펴보니 for문으로 순차적으로 호출하고 있습니다. for문과 block메소드가 만나 Reactive 클라이언트인 WebClient를 동기적으로 동작하게 만들고 말았습니다.
 
