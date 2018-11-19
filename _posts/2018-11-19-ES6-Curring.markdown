@@ -1,0 +1,29 @@
+---
+title: "ES6 - Currying"
+tags:
+  - JavaScript
+  - ES6
+last_modified_at: 2018-11-18T12:04:24-04:00
+toc: true
+---
+
+커링(Currying)은 고차 함수와 관련한 함수형 프로그래밍 기법입니다. 커링은 어떤 연산을 수행할 때 필요한 값 중 일부를 저장하고 나중에 나머지 값을 전달받는 기법입니다. 이를 위해 다른 함수를 반환하는 함수를 사용하며, 이를 커링된 함수라 부릅니다.
+
+userLogs는 일부 정보(userName)를 받아서 함수를 반환합니다. 나머지 정보(message)가 사용 가능해지면 userLogs를 반환한 함수를 활용할 수 있습니다. 예제에서는 연관된 사용자 이름 정보 뒤에 로그 메시지를 덧붙입니다.
+
+~~~java
+const userLogs = userName => message =>
+  console.log(`${userName} -> ${message}`)
+
+const log = userLogs('sungjun221')
+
+log("attempted to load order list")
+getOrderInfo(10).then(
+  members => log(`successfully loaded ${orderInfo.length}`),
+  error => log("encountered an error loading order info")
+)
+~~~
+
+- - -
+* 참고
+  - Learning React, 한빛미디어(2018), 79p
