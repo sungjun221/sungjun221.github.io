@@ -1,5 +1,8 @@
 ---
 title: "Ionic2 프로젝트 만들기"
+categories: 
+  - JavaScript
+  - Mobile App
 tag: 
   - JavaScript
   - Mobile App

@@ -1,8 +1,13 @@
 ---
 title: "ES6 객체와 배열"
+categories: 
+  - JavaScript
 tags:
   - JavaScript
   - ES6
+  - Destructuring Assignment
+  - Enhanced Object Literal
+  - Spread Operator
 last_modified_at: 2018-11-18T12:04:24-04:00
 toc: true
 ---
@@ -147,10 +152,6 @@ arr1.push(...arr2);
 ~~~
 
 <br>
-<br>
-
-프라미스 (Promise)
--
 
 - - -
 * 참고

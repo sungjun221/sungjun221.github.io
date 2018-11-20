@@ -1,5 +1,8 @@
 ---
 title: "Ionic2 + Firebase3로 빠르게 나만의 앱 만들기"
+categories: 
+  - JavaScript
+  - Mobile App
 tag: 
   - JavaScript
   - Mobile App

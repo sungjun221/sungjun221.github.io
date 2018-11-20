@@ -1,11 +1,11 @@
 # main links
 main:
+  - title: "Cat"
+    url: /categories/
   - title: "Tag"
     url: /tags/
   # - title: "About"
   #   url: /about/
-  # - title: "Category"
-  #   url: /categories/
   # - title: "Sample Posts"
   #   url: /year-archive/
   # - title: "Sample Collections"

@@ -1,8 +1,11 @@
 ---
 title: "ES6 Currying"
+categories: 
+  - JavaScript
 tags:
   - JavaScript
   - ES6
+  - Currying
 last_modified_at: 2018-11-18T12:04:24-04:00
 toc: true
 ---

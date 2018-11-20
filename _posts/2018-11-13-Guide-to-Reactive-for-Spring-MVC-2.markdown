@@ -1,5 +1,9 @@
 ---
 title: "Guide to 'Reactive' for Spring MVC Developers (2)"
+categories: 
+  - Java
+  - Spring
+  - Reactive
 tags:
   - Java
   - Spring
