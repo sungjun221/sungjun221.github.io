@@ -4,6 +4,16 @@ layout: archive
 
 {{ content }}
 
+<h3 class="archive__subtitle">Main posts</h3>
+
+{% for post in paginator.posts %}
+  {% if post.categories contains "Main" %}
+    {% include archive-single.html %}
+  {% endif %}
+{% endfor %}
+
+<br>
+
 <h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
 
 {% for post in paginator.posts %}
