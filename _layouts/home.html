@@ -16,19 +16,19 @@ layout: archive
 {% endfor %}
 
 {% if is_display == true %}
-  <h3 class="archive__subtitle">Main posts</h3>
-{% endif %}
+<h3 class="archive__subtitle">Main posts</h3>
 
-{% for post in paginator.posts %}
-  {% if post.categories contains "Main" %}
-    {% assign counter=counter | plus:1 %}
-    {% if counter <= main_posts_max %}
-      {% include archive-single.html %}
+  {% for post in paginator.posts %}
+    {% if post.categories contains "Main" %}
+      {% assign counter=counter | plus:1 %}
+      {% if counter <= main_posts_max %}
+        {% include archive-single.html %}
+      {% endif %}
     {% endif %}
-  {% endif %}
-{% endfor %}
+  {% endfor %}
 
 <br>
+{% endif %}
 
 <h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
 
