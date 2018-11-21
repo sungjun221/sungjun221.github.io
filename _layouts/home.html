@@ -5,9 +5,19 @@ layout: archive
 {{ content }}
 
 {% assign counter = 0 %}
+{% assign is_display = false %}
 {% assign main_posts_max = 5 %}
 
-<h3 class="archive__subtitle">Main posts</h3>
+{% for post in paginator.posts %}
+  {% if post.categories contains "Main" %}
+    {% assign is_display = true %}
+    {% break %}
+  {% endif %}  
+{% endfor %}
+
+{% if is_display == true %}
+  <h3 class="archive__subtitle">Main posts</h3>
+{% endif %}
 
 {% for post in paginator.posts %}
   {% if post.categories contains "Main" %}
