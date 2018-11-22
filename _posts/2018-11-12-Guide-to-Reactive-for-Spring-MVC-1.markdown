@@ -16,7 +16,7 @@ Reactive 지원을 시작한 Spring
 -
 
 ![SpringOne Platform 2018](https://user-images.githubusercontent.com/4060030/48657448-3fa9d200-ea74-11e8-86f5-250669140534.png "SpringOne Platform 2018")
-최근 몇 년간 애플리케이션은 점점 커지고 복잡해졌습니다. 그래서 요청을 보내면 응답이 올 때까지 대기하고 있는 기존의 Synchronous, Blocking I/O에 기반한 시스템으로는 감당하기 어려운 상황도 나오고 있습니다.
+최근 몇 년간 애플리케이션은 점점 커지고 복잡해졌습니다. 요청을 보내면 응답이 올 때까지 대기하고 있는 기존의 Synchronous, Blocking I/O에 기반한 시스템으로는 감당하기 어려운 상황도 나오고 있습니다.
 
 그래서 최근에는 요청을 보내고 자기 할 일은 따로 하는 Asynchronous, Non-Blocking I/O에 기반한 시스템에 대한 관심이 커지고 있습니다. 이것이 바로 Reactive Programming입니다.
 
@@ -94,7 +94,7 @@ Spring 세계에서 오랫동안 우리를 지원해준 든든한 이름입니�
 <br>
 
 ### 새롭게 등장한 WebClient
-그래서 Spring 개발진들은 5버전부터 WebClient를 선보였습니다. Async, Non-Blocking I/O를 기반으로 합니다. RestTemplate과는 정반대의 접근방향입니다. Reactive하고 선언적(Declaritive)이며 Streaming을 활용합니다. 그럼 다음 2편에서 샘플예제를 실행해보며 WebClient와 RestTemplate간의 차이점을 살펴보겠습니다.
+그래서 Spring 개발진들은 5버전부터 WebClient를 선보였습니다. Async, Non-Blocking I/O를 기반으로 합니다. RestTemplate과는 정반대의 접근방향입니다. Reactive하고 선언적(Declaritive)이며 Streaming을 활용합니다. 다음 2편에서 샘플예제를 실행해보며 WebClient와 RestTemplate간의 차이점을 살펴보겠습니다.
 
 <br>
 
