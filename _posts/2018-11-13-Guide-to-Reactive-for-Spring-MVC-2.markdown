@@ -13,7 +13,7 @@ last_modified_at: 2018-11-13T12:04:24-04:00
 toc: true
 ---
 
-지난 글에 이어 이번에는 RestTemplate과 WebClient의 차이점을 예제를 통해 살펴보겠습니다. 예제는 간단한 서버를 하나 띄우고, 클라이언트에서 각각 RestTemplate과 WebClient로 호출을 해보는 겁니다. 예제는 아래 Github Repository에서도 다운 받으실 수 있으니 참고해주세요. Spring Boot로 구성되어 있어 Maven Update만 하면 바로 테스트 해보실 수 있습니다.
+지난 글에 이어 이번에는 RestTemplate과 WebClient의 차이점을 예제를 통해 살펴보겠습니다. 간단한 서버를 하나 띄우고, 클라이언트에서 각각 RestTemplate과 WebClient로 호출을 해보는 예제입니다. 아래 Github Repository에서 다운 받으실 수 있습니다. Spring Boot로 구성되어 있어 Maven Update만 하면 바로 테스트 해보실 수 있습니다.
 
 - [Demo Github Repository](https://github.com/sungjun221/reactive-for-webmvc)
 
@@ -22,7 +22,7 @@ toc: true
 RestTemplate을 이용한 호출 예
 -
 
-먼저 서버프로그램입니다. Person의 데이터를 Map에 입력해두고 호출이 오면 전송합니다. 모든 호출에 Delay를 주어 네트워크 비용 등을 반영합니다.
+먼저 서버프로그램을 살펴보겠습니다. Person의 데이터를 Map에 입력해두고 호출이 오면 전송합니다. 그리고 파라미터로 delay 값을 받아 지연을 줄 수 있습니다. 이 값으로 호출 시 네트워크 호출에 대한 비용 등을 표현합니다.
 
 ~~~java
 @Bean
@@ -53,7 +53,7 @@ public RouterFunction<?> routes() {
 }
 ~~~
 
-그럼 이번엔 RestTemplte을 이용하여 호출하는 클라이언트입니다. delay 파라미터에 값을 넘겨 호출마다 2초간 딜레이를 줍니다. 그럼 실행해 볼까요?
+다음은 RestTemplte을 이용하여 호출하는 클라이언트입니다. delay 파라미터에 값을 넘겨 호출마다 2초간 지연을 줍니다. 그럼 실행해 볼까요?
 
 ~~~java
 public class Step1 {
@@ -122,7 +122,7 @@ public class Step2a {
 
 ![WebClient Example 01](https://user-images.githubusercontent.com/4060030/48671542-17ea6500-eb6d-11e8-9f8e-edf83e46df7e.png "WebClient Example 01")
 
-..?? 뭔가 이상합니다. 비동기 호출을 했으니 동기호출했을 때보다 좀 더 나은 결과를 기대했는데 별반 다르지 않습니다. 로그를 살펴보니 for문으로 순차적으로 호출하고 있습니다. for문과 block메소드가 만나 Reactive 클라이언트인 WebClient를 동기적으로 동작하게 만들고 말았습니다.
+..?? 뭔가 이상합니다. 비동기 호출을 했으니 동기호출했을 때보다 좀 더 나은 결과를 기대했는데 별반 다르지 않습니다. 로그를 살펴보니 for문으로 순차적으로 호출하고 있습니다. for문과 block메소드가 만나 Reactive 클라이언트인 WebClient를 동기적으로 동작하게 만들었습니다.
 
 ### WebClient를 이용한 호출 예 2
 이번엔 WebFlux의 기능을 제대로 활용해보겠습니다. Reactor의 객체인 Flux를 이용하여 호출합니다. Flux는 0-N개인 여러개의 결과를 처리하는 Reactor 객체입니다. 참고로 다른 Reactor 객체인 Mono는 0-1개의 결과를 처리합니다. 그럼 아래와 같은 예제를 실행해보겠습니다.
