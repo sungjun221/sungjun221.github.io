@@ -24,7 +24,7 @@ toc: true
 
 먼저 Array의 각 값들이 최소값이 될 수 있는 Window Size 중에 가장 큰 값이 얼마인지를 찾아보자. 예를 들어 {11, 2, 3, 14, 5, 2, 11, 12}의 값이 주어졌다고 하자. 그렇다면 number -> window_size라고 할 때 max_window = {11: 2, 2: 8, 3: 3, 14: 1, 5: 2, 12: 1}가 된다. 11이 최소값이 될 수 있는 최대 Window Size가 2인 것이다.
 
-그럼 이제 반대로 뒤집어보자. Key를 Window Size 기준으로 하는 것이다. 뒤집은 값 중 중복되는 Window Size는 가진 값이 최대인 것만 남겨놓자. 그러면 window_size -> max_value가 되며 inverted_windows = {1: 14, 8:2, 3:3, 2:11}가 된다. 즉 Window Size가 1일 때 가질 수 있는 최대값은 14가 되는 것이다.
+그럼 이제 반대로 뒤집어보자. Key를 Window Size 기준으로 하는 것이다. 뒤집은 값 중 중복되는 Window Size는 가진 값이 최대인 것만 남겨놓자. 그러면 window_size -> max_value가 되며 inverted_windows = {1: 14, 8: 2, 3: 3, 2: 11}가 된다. 즉 Window Size가 1일 때 가질 수 있는 최대값은 14가 되는 것이다.
 
 구하고자 하는 최대값은 Window Size가 작을수록 커진다. Window Size가 작을수록 큰 값이 최소값이 되기 때문이다. Window Size의 큰 값부터 작은값까지 값을 나열해보자. Window Size가 8일 때는 최대값은 2가 나온다. 7일 때는 따로 구해진 값이 없기 때문에 8과 같은 최대값 2이다. 6,5,4...도 마찬가지이다. 그러다 Window Size 3의 최대값은 3이 나온다. 이렇게 정리해보면 result = [2, 2, 2, 2, 2, 3, 11, 14]가 나온다.
 
