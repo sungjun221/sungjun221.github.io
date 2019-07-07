@@ -1,0 +1,25 @@
+---
+title: "[Side Projects] 삼국지퀴즈"
+categories: 
+  - Side Project
+  - Main
+tags:
+  - Side Project
+  - Unity
+  - Firebase
+  - Game
+last_modified_at: 2019-07-07T12:04:24-04:00
+toc: true
+---
+Unity를 이용해서 만든 가벼운 삼국지퀴즈 게임입니다.
+
+삼덕을 자부한다면 자신의 실력을 확인해보세요!
+
+![SamQuiz](https://user-images.githubusercontent.com/4060030/60764513-78132480-a0c6-11e9-8930-c1fabd0c5f81.png "SamQuiz")
+
+Download
+--
+
+- [iOS](https://apple.co/2KPgKsT)
+
+- [Android](http://bit.ly/2ZmW5QW)
