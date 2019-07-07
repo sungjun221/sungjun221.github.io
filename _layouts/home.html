@@ -5,28 +5,17 @@ layout: archive
 {{ content }}
 
 {% assign counter = 0 %}
-{% assign is_display = false %}
-{% assign main_posts_max = 5 %}
+{% assign main_posts_max = 3 %}
+{% assign posts = site.categories['Main'] %}
 
-{% for post in paginator.posts %}
-  {% if post.categories contains "Main" %}
-    {% assign is_display = true %}
-    {% break %}
-  {% endif %}  
-{% endfor %}
-
-{% if is_display == true %}
+{% if paginator.page == 1 %}
 <h3 class="archive__subtitle">Main posts</h3>
-
-  {% for post in paginator.posts %}
-    {% if post.categories contains "Main" %}
+  {% for post in posts %}
       {% assign counter=counter | plus:1 %}
       {% if counter <= main_posts_max %}
         {% include archive-single.html %}
       {% endif %}
-    {% endif %}
   {% endfor %}
-
 <br>
 {% endif %}
 
