@@ -1,5 +1,5 @@
 ---
-title: "[Side Projects] 삼국지퀴즈"
+title: "[Side Project] 삼국지퀴즈"
 categories: 
   - Side Project
   - Main
@@ -11,7 +11,7 @@ tags:
 last_modified_at: 2019-07-07T12:04:24-04:00
 toc: true
 ---
-Unity를 이용해서 만든 가벼운 삼국지퀴즈 게임입니다.
+Unity와 Firebase를 이용해서 만든 가벼운 삼국지퀴즈 게임입니다.
 
 제갈량이 내는 삼국지 문제들을 맞추는 게임입니다.
 
