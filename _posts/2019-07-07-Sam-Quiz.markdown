@@ -12,16 +12,12 @@ last_modified_at: 2019-07-07T12:04:24-04:00
 toc: true
 ---
 Unity와 Firebase를 이용해서 만든 가벼운 삼국지퀴즈 게임입니다.
-
 제갈량이 내는 삼국지 문제들을 맞추는 게임입니다.
-
 모르는 문제는 제갈량에게 1번 물어볼 수 있습니다.
 
 ![SamQuiz](https://user-images.githubusercontent.com/4060030/60764513-78132480-a0c6-11e9-8930-c1fabd0c5f81.png "SamQuiz")
 
 Download
 --
-
 - [iOS](https://apple.co/2KPgKsT)
-
 - [Android](http://bit.ly/2ZmW5QW)

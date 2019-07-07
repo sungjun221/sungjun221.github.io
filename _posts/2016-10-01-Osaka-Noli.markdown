@@ -12,7 +12,6 @@ last_modified_at: 2016-10-01T12:04:24-04:00
 toc: true
 ---
 Ionic(Angular), Firebase를 이용해 만든 여행정보앱입니다.
-
 각각 오사카와 타이베이에 대한 여행정보를 제공합니다.
 
 
