@@ -29,7 +29,7 @@ class Solution {
 
     public List<String> letterCombinations(String digits) {
       List<String> ret = new ArrayList<>();
-    if(digits.length() == 0) return ret;
+      if(digits.length() == 0) return ret;
       combination("", digits, 0, ret);
       return ret;
     }
@@ -50,13 +50,13 @@ class Solution {
 
 반복적인 방법
 -
-반복적인 방법은 조금 어렵다. 반복할 대상을 Queue(List)에 넣어 빼가며 결과를 만든다.
+반복적인 방법은 조금 어렵다. 반복할 대상을 Queue(LinkedList)에 넣어 빼가며 결과를 만든다.
 
 조합이 된 각 문자는 digits의 length만큼의 길이가 되야하기 때문에, 이 경우가 될 때까지 Queue에 뺐다 넣었다를 반복하며 조합을 진행한다.
 
 ~~~java
 public List<String> letterCombinations(String digits) {
-  List<String> ret = new LinkedList<String>();
+  LinkedList<String> ret = new LinkedList<String>();
   if(digits.isEmpty()) return ret;
   String[] mapping = new String[]{"", "", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"};
   ret.add("");
