@@ -7,13 +7,13 @@ tags:
   - Remove nth node from end of list
   - LeetCode
   - JavaScript
-last_modified_at: 2019-07-16T12:04:24-04:00
+last_modified_at: 2019-07-19T12:04:24-04:00
 toc: true
 ---
 
 문제정보
 -
-- [LeetCode - remove-nth-node-from-end-of-list](https://leetcode.com/problems/remove-nth-node-from-end-of-list)
+- [LeetCode - Remove nth node from end of list](https://leetcode.com/problems/remove-nth-node-from-end-of-list)
 
 어떻게 풀까?
 -

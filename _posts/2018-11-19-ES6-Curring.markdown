@@ -1,32 +1,609 @@
----
-title: "ES6 Currying"
-categories: 
-  - JavaScript
-tags:
-  - JavaScript
-  - ES6
-  - Currying
-last_modified_at: 2018-11-18T12:04:24-04:00
-toc: true
----
-
-커링(Currying)은 고차 함수와 관련한 함수형 프로그래밍 기법입니다. 커링은 어떤 연산을 수행할 때 필요한 값 중 일부를 저장하고 나중에 나머지 값을 전달받는 기법입니다. 이를 위해 다른 함수를 반환하는 함수를 사용하며, 이를 커링된 함수라 부릅니다.
-
-다음 예제에서 userLogs는 일부 정보(userName)를 받아서 함수를 반환합니다. 나머지 정보(message)가 사용 가능해지면 userLogs를 반환한 함수를 활용할 수 있습니다. 이 예제는 연관된 사용자 이름 정보 뒤에 로그 메시지를 덧붙입니다.
-
-~~~java
-const userLogs = userName => message =>
-  console.log(`${userName} -> ${message}`)
-
-const log = userLogs('sungjun221')
-
-log("attempted to load order list")
-getOrderInfo(10).then(
-  members => log(`successfully loaded ${orderInfo.length}`),
-  error => log("encountered an error loading order info")
-)
-~~~
-
-- - -
-* 참고
-  - Learning React, 한빛미디어(2018), 79p
+{
+  "wishList": false,
+  "vendorItemId": 4442244590,
+  "vendor": null,
+  "used": false,
+  "trackMeta": {
+    "trcid": "",
+    "traid": "",
+    "style": "NORMAL",
+    "sourceType": "others",
+    "searchId": "",
+    "sdpVisitKey": "7mfl341p3pruwyyslc",
+    "q": "",
+    "emailEventDeal": false,
+    "emailDealWithoutCookieMessage": null,
+    "clickVendorItemId": 4442244590,
+    "clickProductId": 1650776,
+    "clickItemId": null,
+    "categoryId": null
+  },
+  "title": "동아오츠카 포카리스웨트 1.5L",
+  "supplier": null,
+  "subscribeInfo": null,
+  "stickBanners": [],
+  "soldOut": true,
+  "shippingConsolidationLink": null,
+  "sellingInfoVo": {
+    "sellingInfo": [
+      "원산지: 상품 상세설명 참조",
+      "유통기한: 2019-08-15 이후인 상품",
+      "용기 타입: 플라스틱병",
+      "1회 제공량당 열량: 50Kcal",
+      "쿠팡상품번호: 1650776 - 549634167"
+    ],
+    "countryOfOrigin": "상품 상세설명 참조"
+  },
+  "roleCode": 3,
+  "restockNotification": false,
+  "ratingCount": "340",
+  "ratingAveragePercentage": 90.0,
+  "quantityBase": [
+    {
+      "subscriptionPrice": null,
+      "subscriptionDelivery": null,
+      "shippingFeeList": [
+        {
+          "message": "<em class='prod-txt-bold'>무료배송</em>",
+          "freeShippingConditionMessage": null
+        }
+      ],
+      "shippingFee": {
+        "message": "<em class='prod-txt-bold'>무료배송</em>",
+        "freeShippingConditionMessage": null
+      },
+      "shipmentDisplayType": "NORMAL",
+      "quantity": 1,
+      "priceUnit": "원",
+      "price": {
+        "unitDiscountRate": null,
+        "saleUnitPrice": "100ml당 122원",
+        "salePriceTitle": null,
+        "salePrice": "44,060",
+        "originalPriceDesc": "",
+        "originPrice": "",
+        "instantDiscount": false,
+        "discountRate": null,
+        "couponUnitPrice": null,
+        "couponPriceTitle": null,
+        "couponPrice": "",
+        "cashPromotionMessage": null
+      },
+      "deliveryList": [
+        {
+          "type": "ROCKET_DELIVERY",
+          "speedType": "STANDARD",
+          "rocketWowQuestionMark": false,
+          "logistics": true,
+          "descriptions": null,
+          "descriptionBadge": null,
+          "deliveryReminderMessage": null,
+          "deliveryExtraInfo": [],
+          "delayMessage": null,
+          "countDownMillisecond": null,
+          "countDownMessage": null,
+          "company": null,
+          "badgeUrl": "//image15.coupangcdn.com/image/badges/rocket/rocket_logo.png"
+        }
+      ],
+      "delivery": {
+        "type": "ROCKET_DELIVERY",
+        "speedType": "STANDARD",
+        "rocketWowQuestionMark": false,
+        "logistics": true,
+        "descriptions": null,
+        "descriptionBadge": null,
+        "deliveryReminderMessage": null,
+        "deliveryExtraInfo": [],
+        "delayMessage": null,
+        "countDownMillisecond": null,
+        "countDownMessage": null,
+        "company": null,
+        "badgeUrl": "//image15.coupangcdn.com/image/badges/rocket/rocket_logo.png"
+      }
+    }
+  ],
+  "purchaseOnly": false,
+  "productId": 1650776,
+  "otherSellerCount": null,
+  "options": {
+    "optionRows": [
+      {
+        "typeId": "7823,7663",
+        "sizeAttribute": false,
+        "selectedAttribute": {
+          "valueId": "1005949302,3165519550",
+          "selected": true,
+          "name": "1.5L × 24개",
+          "image": null,
+          "bundleOptionMsg": null
+        },
+        "name": "개당 용량 × 총 수량",
+        "leaf": true,
+        "displayType": "TEXT",
+        "displayComponentType": "DROPDOWN",
+        "attributes": [
+          {
+            "valueId": "1005949302,1626176743",
+            "selected": false,
+            "name": "1.5L × 1개",
+            "image": null,
+            "bundleOptionMsg": null
+          },
+          {
+            "valueId": "1005949302,1626176774",
+            "selected": false,
+            "name": "1.5L × 2개",
+            "image": null,
+            "bundleOptionMsg": null
+          },
+          {
+            "valueId": "1005949302,3165518527",
+            "selected": false,
+            "name": "1.5L × 12개",
+            "image": null,
+            "bundleOptionMsg": null
+          },
+          {
+            "valueId": "1005949302,3165519550",
+            "selected": true,
+            "name": "1.5L × 24개",
+            "image": null,
+            "bundleOptionMsg": null
+          }
+        ]
+      }
+    ],
+    "attributeVendorItemMap": {
+      "1005949302,1626176774": {
+        "wishList": false,
+        "vendorItemId": 4016814827,
+        "vendor": null,
+        "used": false,
+        "supplier": null,
+        "subscribeInfo": null,
+        "stickBanners": null,
+        "soldOut": false,
+        "shippingConsolidationLink": null,
+        "sellingInfoVo": null,
+        "roleCode": null,
+        "restockNotification": false,
+        "quantityBase": [
+          {
+            "subscriptionPrice": null,
+            "subscriptionDelivery": null,
+            "shippingFeeList": [
+              {
+                "message": "배송비 2,500원",
+                "freeShippingConditionMessage": null
+              }
+            ],
+            "shippingFee": {
+              "message": "배송비 2,500원",
+              "freeShippingConditionMessage": null
+            },
+            "shipmentDisplayType": "NORMAL",
+            "quantity": 1,
+            "priceUnit": "원",
+            "price": {
+              "unitDiscountRate": null,
+              "saleUnitPrice": "100ml당 197원",
+              "salePriceTitle": null,
+              "salePrice": "5,900",
+              "originalPriceDesc": "",
+              "originPrice": "",
+              "instantDiscount": false,
+              "discountRate": null,
+              "couponUnitPrice": null,
+              "couponPriceTitle": null,
+              "couponPrice": "",
+              "cashPromotionMessage": null
+            },
+            "deliveryList": [
+              {
+                "type": "VENDOR_DELIVERY",
+                "speedType": null,
+                "rocketWowQuestionMark": false,
+                "logistics": false,
+                "descriptions": "<em class='prod-txt-onyx prod-txt-font-14'>목요일 3/7</em><em class='prod-txt-onyx'> 도착 예정 (판매자배송)</em>",
+                "descriptionBadge": null,
+                "deliveryReminderMessage": null,
+                "deliveryExtraInfo": null,
+                "delayMessage": null,
+                "countDownMillisecond": null,
+                "countDownMessage": null,
+                "company": null,
+                "badgeUrl": null
+              }
+            ],
+            "delivery": {
+              "type": "VENDOR_DELIVERY",
+              "speedType": null,
+              "rocketWowQuestionMark": false,
+              "logistics": false,
+              "descriptions": "<em class='prod-txt-onyx prod-txt-font-14'>목요일 3/7</em><em class='prod-txt-onyx'> 도착 예정 (판매자배송)</em>",
+              "descriptionBadge": null,
+              "deliveryReminderMessage": null,
+              "deliveryExtraInfo": null,
+              "delayMessage": null,
+              "countDownMillisecond": null,
+              "countDownMessage": null,
+              "company": null,
+              "badgeUrl": null
+            }
+          }
+        ],
+        "otherSellerCount": null,
+        "offerDescription": null,
+        "offerBanner": null,
+        "memberInfo": null,
+        "itemName": "동아오츠카 포카리스웨트 1.5L, 2개",
+        "itemId": 7298865,
+        "inventory": null,
+        "invalid": false,
+        "images": [
+          {
+            "thumbnailImage": "//thumbnail15.coupangcdn.com/thumbnails/remote/48x48ex/image/product/image/vendoritem/2016/06/09/3028939693/a63aaa61-bccf-45f7-94c1-72bb747c7c9b.jpg",
+            "preloadImage": "//thumbnail15.coupangcdn.com/thumbnails/remote/230x230ex/image/product/image/vendoritem/2016/06/09/3028939693/a63aaa61-bccf-45f7-94c1-72bb747c7c9b.jpg",
+            "origin": "//image15.coupangcdn.com/image/product/image/vendoritem/2016/06/09/3028939693/a63aaa61-bccf-45f7-94c1-72bb747c7c9b.jpg",
+            "detailImage": "//thumbnail15.coupangcdn.com/thumbnails/remote/492x492ex/image/product/image/vendoritem/2016/06/09/3028939693/a63aaa61-bccf-45f7-94c1-72bb747c7c9b.jpg"
+          }
+        ],
+        "dawnOnly": false,
+        "couponList": null,
+        "buyableQuantity": 9992,
+        "badgeMap": {},
+        "authors": [],
+        "apiUrlMap": {},
+        "almostSoldOut": false
+      },
+      "1005949302,3165519550": {
+        "wishList": false,
+        "vendorItemId": 4442244590,
+        "vendor": null,
+        "used": false,
+        "supplier": null,
+        "subscribeInfo": null,
+        "stickBanners": null,
+        "soldOut": true,
+        "shippingConsolidationLink": null,
+        "sellingInfoVo": null,
+        "roleCode": null,
+        "restockNotification": false,
+        "quantityBase": [
+          {
+            "subscriptionPrice": null,
+            "subscriptionDelivery": null,
+            "shippingFeeList": [
+              {
+                "message": "<em class='prod-txt-bold'>무료배송</em>",
+                "freeShippingConditionMessage": null
+              }
+            ],
+            "shippingFee": {
+              "message": "<em class='prod-txt-bold'>무료배송</em>",
+              "freeShippingConditionMessage": null
+            },
+            "shipmentDisplayType": "NORMAL",
+            "quantity": 1,
+            "priceUnit": "원",
+            "price": {
+              "unitDiscountRate": null,
+              "saleUnitPrice": "100ml당 122원",
+              "salePriceTitle": null,
+              "salePrice": "44,060",
+              "originalPriceDesc": "",
+              "originPrice": "",
+              "instantDiscount": false,
+              "discountRate": null,
+              "couponUnitPrice": null,
+              "couponPriceTitle": null,
+              "couponPrice": "",
+              "cashPromotionMessage": null
+            },
+            "deliveryList": [
+              {
+                "type": "ROCKET_DELIVERY",
+                "speedType": null,
+                "rocketWowQuestionMark": false,
+                "logistics": true,
+                "descriptions": null,
+                "descriptionBadge": null,
+                "deliveryReminderMessage": null,
+                "deliveryExtraInfo": [],
+                "delayMessage": null,
+                "countDownMillisecond": null,
+                "countDownMessage": null,
+                "company": null,
+                "badgeUrl": "//image15.coupangcdn.com/image/badges/rocket/rocket_logo.png"
+              }
+            ],
+            "delivery": {
+              "type": "ROCKET_DELIVERY",
+              "speedType": null,
+              "rocketWowQuestionMark": false,
+              "logistics": true,
+              "descriptions": null,
+              "descriptionBadge": null,
+              "deliveryReminderMessage": null,
+              "deliveryExtraInfo": [],
+              "delayMessage": null,
+              "countDownMillisecond": null,
+              "countDownMessage": null,
+              "company": null,
+              "badgeUrl": "//image15.coupangcdn.com/image/badges/rocket/rocket_logo.png"
+            }
+          }
+        ],
+        "otherSellerCount": null,
+        "offerDescription": null,
+        "offerBanner": null,
+        "memberInfo": null,
+        "itemName": "동아오츠카 포카리스웨트 1.5L, 24개",
+        "itemId": 549634167,
+        "inventory": 0,
+        "invalid": false,
+        "images": [
+          {
+            "thumbnailImage": "//thumbnail11.coupangcdn.com/thumbnails/remote/48x48ex/image/product/image/vendoritem/2019/01/31/3058671369/1f047b35-f62b-4616-8ac1-97255d25cdcc.jpg",
+            "preloadImage": "//thumbnail11.coupangcdn.com/thumbnails/remote/230x230ex/image/product/image/vendoritem/2019/01/31/3058671369/1f047b35-f62b-4616-8ac1-97255d25cdcc.jpg",
+            "origin": "//image11.coupangcdn.com/image/product/image/vendoritem/2019/01/31/3058671369/1f047b35-f62b-4616-8ac1-97255d25cdcc.jpg",
+            "detailImage": "//thumbnail11.coupangcdn.com/thumbnails/remote/492x492ex/image/product/image/vendoritem/2019/01/31/3058671369/1f047b35-f62b-4616-8ac1-97255d25cdcc.jpg"
+          }
+        ],
+        "dawnOnly": false,
+        "couponList": null,
+        "buyableQuantity": 0,
+        "badgeMap": {},
+        "authors": [],
+        "apiUrlMap": {},
+        "almostSoldOut": true
+      },
+      "1005949302,3165518527": {
+        "wishList": false,
+        "vendorItemId": 4213821507,
+        "vendor": null,
+        "used": false,
+        "supplier": null,
+        "subscribeInfo": null,
+        "stickBanners": null,
+        "soldOut": false,
+        "shippingConsolidationLink": null,
+        "sellingInfoVo": null,
+        "roleCode": null,
+        "restockNotification": false,
+        "quantityBase": [
+          {
+            "subscriptionPrice": null,
+            "subscriptionDelivery": null,
+            "shippingFeeList": [
+              {
+                "message": "<em class='prod-txt-bold'>무료배송</em>",
+                "freeShippingConditionMessage": null
+              }
+            ],
+            "shippingFee": {
+              "message": "<em class='prod-txt-bold'>무료배송</em>",
+              "freeShippingConditionMessage": null
+            },
+            "shipmentDisplayType": "NORMAL",
+            "quantity": 1,
+            "priceUnit": "원",
+            "price": {
+              "unitDiscountRate": null,
+              "saleUnitPrice": "100ml당 139원",
+              "salePriceTitle": null,
+              "salePrice": "25,000",
+              "originalPriceDesc": "",
+              "originPrice": "",
+              "instantDiscount": false,
+              "discountRate": null,
+              "couponUnitPrice": null,
+              "couponPriceTitle": null,
+              "couponPrice": "",
+              "cashPromotionMessage": null
+            },
+            "deliveryList": [
+              {
+                "type": "VENDOR_DELIVERY",
+                "speedType": null,
+                "rocketWowQuestionMark": false,
+                "logistics": false,
+                "descriptions": "<em class='prod-txt-onyx prod-txt-font-14'>수요일 3/6</em><em class='prod-txt-onyx'> 도착 예정 (판매자배송)</em>",
+                "descriptionBadge": null,
+                "deliveryReminderMessage": null,
+                "deliveryExtraInfo": null,
+                "delayMessage": null,
+                "countDownMillisecond": null,
+                "countDownMessage": null,
+                "company": null,
+                "badgeUrl": null
+              }
+            ],
+            "delivery": {
+              "type": "VENDOR_DELIVERY",
+              "speedType": null,
+              "rocketWowQuestionMark": false,
+              "logistics": false,
+              "descriptions": "<em class='prod-txt-onyx prod-txt-font-14'>수요일 3/6</em><em class='prod-txt-onyx'> 도착 예정 (판매자배송)</em>",
+              "descriptionBadge": null,
+              "deliveryReminderMessage": null,
+              "deliveryExtraInfo": null,
+              "delayMessage": null,
+              "countDownMillisecond": null,
+              "countDownMessage": null,
+              "company": null,
+              "badgeUrl": null
+            }
+          }
+        ],
+        "otherSellerCount": null,
+        "offerDescription": null,
+        "offerBanner": null,
+        "memberInfo": null,
+        "itemName": "동아오츠카 포카리스웨트 1.5L, 12개",
+        "itemId": 999007,
+        "inventory": null,
+        "invalid": false,
+        "images": [
+          {
+            "thumbnailImage": "//thumbnail11.coupangcdn.com/thumbnails/remote/48x48ex/image/product/image/vendoritem/2019/01/31/3058671369/1f047b35-f62b-4616-8ac1-97255d25cdcc.jpg",
+            "preloadImage": "//thumbnail11.coupangcdn.com/thumbnails/remote/230x230ex/image/product/image/vendoritem/2019/01/31/3058671369/1f047b35-f62b-4616-8ac1-97255d25cdcc.jpg",
+            "origin": "//image11.coupangcdn.com/image/product/image/vendoritem/2019/01/31/3058671369/1f047b35-f62b-4616-8ac1-97255d25cdcc.jpg",
+            "detailImage": "//thumbnail11.coupangcdn.com/thumbnails/remote/492x492ex/image/product/image/vendoritem/2019/01/31/3058671369/1f047b35-f62b-4616-8ac1-97255d25cdcc.jpg"
+          }
+        ],
+        "dawnOnly": false,
+        "couponList": null,
+        "buyableQuantity": 100,
+        "badgeMap": {},
+        "authors": [],
+        "apiUrlMap": {},
+        "almostSoldOut": false
+      },
+      "1005949302,1626176743": {
+        "wishList": false,
+        "vendorItemId": 4372906009,
+        "vendor": null,
+        "used": false,
+        "supplier": null,
+        "subscribeInfo": null,
+        "stickBanners": null,
+        "soldOut": false,
+        "shippingConsolidationLink": null,
+        "sellingInfoVo": null,
+        "roleCode": null,
+        "restockNotification": false,
+        "quantityBase": [
+          {
+            "subscriptionPrice": null,
+            "subscriptionDelivery": null,
+            "shippingFeeList": [
+              {
+                "message": "배송비 2,500원",
+                "freeShippingConditionMessage": null
+              }
+            ],
+            "shippingFee": {
+              "message": "배송비 2,500원",
+              "freeShippingConditionMessage": null
+            },
+            "shipmentDisplayType": "NORMAL",
+            "quantity": 1,
+            "priceUnit": "원",
+            "price": {
+              "unitDiscountRate": null,
+              "saleUnitPrice": "100ml당 155원",
+              "salePriceTitle": null,
+              "salePrice": "2,330",
+              "originalPriceDesc": "",
+              "originPrice": "",
+              "instantDiscount": false,
+              "discountRate": null,
+              "couponUnitPrice": null,
+              "couponPriceTitle": null,
+              "couponPrice": "",
+              "cashPromotionMessage": null
+            },
+            "deliveryList": [
+              {
+                "type": "VENDOR_DELIVERY",
+                "speedType": null,
+                "rocketWowQuestionMark": false,
+                "logistics": false,
+                "descriptions": "<em class='prod-txt-onyx prod-txt-font-14'>수요일 3/6</em><em class='prod-txt-onyx'> 도착 예정 (판매자배송)</em>",
+                "descriptionBadge": null,
+                "deliveryReminderMessage": null,
+                "deliveryExtraInfo": null,
+                "delayMessage": null,
+                "countDownMillisecond": null,
+                "countDownMessage": null,
+                "company": null,
+                "badgeUrl": null
+              }
+            ],
+            "delivery": {
+              "type": "VENDOR_DELIVERY",
+              "speedType": null,
+              "rocketWowQuestionMark": false,
+              "logistics": false,
+              "descriptions": "<em class='prod-txt-onyx prod-txt-font-14'>수요일 3/6</em><em class='prod-txt-onyx'> 도착 예정 (판매자배송)</em>",
+              "descriptionBadge": null,
+              "deliveryReminderMessage": null,
+              "deliveryExtraInfo": null,
+              "delayMessage": null,
+              "countDownMillisecond": null,
+              "countDownMessage": null,
+              "company": null,
+              "badgeUrl": null
+            }
+          }
+        ],
+        "otherSellerCount": null,
+        "offerDescription": null,
+        "offerBanner": null,
+        "memberInfo": null,
+        "itemName": "동아오츠카 포카리스웨트 1.5L, 1개",
+        "itemId": 394625,
+        "inventory": null,
+        "invalid": false,
+        "images": [
+          {
+            "thumbnailImage": "//thumbnail15.coupangcdn.com/thumbnails/remote/48x48ex/image/product/image/vendoritem/2016/04/14/3000303313/4402ec18-7856-4f76-92e1-980bf582c222.jpg",
+            "preloadImage": "//thumbnail15.coupangcdn.com/thumbnails/remote/230x230ex/image/product/image/vendoritem/2016/04/14/3000303313/4402ec18-7856-4f76-92e1-980bf582c222.jpg",
+            "origin": "//image15.coupangcdn.com/image/product/image/vendoritem/2016/04/14/3000303313/4402ec18-7856-4f76-92e1-980bf582c222.jpg",
+            "detailImage": "//thumbnail15.coupangcdn.com/thumbnails/remote/492x492ex/image/product/image/vendoritem/2016/04/14/3000303313/4402ec18-7856-4f76-92e1-980bf582c222.jpg"
+          }
+        ],
+        "dawnOnly": false,
+        "couponList": null,
+        "buyableQuantity": 12,
+        "badgeMap": {},
+        "authors": [],
+        "apiUrlMap": {},
+        "almostSoldOut": false
+      }
+    }
+  },
+  "offerDescription": "",
+  "offerBanner": null,
+  "memberInfo": {
+    "loyaltyMember": true,
+    "expired": false,
+    "eligibleAddress": true
+  },
+  "itemName": "동아오츠카 포카리스웨트 1.5L, 24개",
+  "itemId": 549634167,
+  "inventory": 0,
+  "invalid": false,
+  "images": [
+    {
+      "thumbnailImage": "//thumbnail11.coupangcdn.com/thumbnails/remote/48x48ex/image/product/image/vendoritem/2019/01/31/3058671369/1f047b35-f62b-4616-8ac1-97255d25cdcc.jpg",
+      "preloadImage": "//thumbnail11.coupangcdn.com/thumbnails/remote/230x230ex/image/product/image/vendoritem/2019/01/31/3058671369/1f047b35-f62b-4616-8ac1-97255d25cdcc.jpg",
+      "origin": "//image11.coupangcdn.com/image/product/image/vendoritem/2019/01/31/3058671369/1f047b35-f62b-4616-8ac1-97255d25cdcc.jpg",
+      "detailImage": "//thumbnail11.coupangcdn.com/thumbnails/remote/492x492ex/image/product/image/vendoritem/2019/01/31/3058671369/1f047b35-f62b-4616-8ac1-97255d25cdcc.jpg"
+    }
+  ],
+  "hasBrandShop": true,
+  "detailProductType": null,
+  "dawnOnly": false,
+  "couponList": [],
+  "buyableQuantity": 0,
+  "brand": "포카리스웨트",
+  "betterOffer": null,
+  "badgeMap": {
+    "OFFER_BADGE": {
+      "type": "TEXT",
+      "text": null,
+      "iconUrl": null,
+      "helpLink": "coupang://info?title=%EC%83%81%ED%92%88+%EC%83%81%ED%83%9C+%EC%95%88%EB%82%B4&url=http%3A%2F%2Fm.coupang.com%2Fvm%2Fproducts%2Fused-status-description"
+    }
+  },
+  "authors": [],
+  "apiUrlMap": {
+    "addToCartUrl": "coupang://addCart?itemId=549634167&productId=1650776&vendorItemId=4442244590&sourceType=offerDetail&price=44060&sdpVisitKey=7mfl341p3pruwyyslc&isLoser=false&offerStatus=NEW"
+  },
+  "almostSoldOut": true,
+  "adultWarning": null,
+  "adult": false
+}
