@@ -7,6 +7,7 @@ tags:
   - Algorithm
   - Min Max Riddle
   - HackerRank
+  - Java
 last_modified_at: 2019-03-08T12:04:24-04:00
 toc: true
 ---
