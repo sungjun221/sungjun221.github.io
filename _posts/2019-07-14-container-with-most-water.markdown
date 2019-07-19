@@ -15,7 +15,7 @@ toc: true
 -
 - [LeetCode - Containter With Most Water](https://leetcode.com/problems/container-with-most-water)
 
-어떻게 풀까?
+문제풀이(Java)
 -
 문제 자체는 어렵지 않다. O(N^2)으로 풀면 평범하다. O(N)으로 풀면 괜찮다.
 

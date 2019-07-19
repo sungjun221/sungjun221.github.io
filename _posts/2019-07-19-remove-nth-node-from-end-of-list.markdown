@@ -6,7 +6,7 @@ tags:
   - Algorithm
   - Remove nth node from end of list
   - LeetCode
-  - Javascript
+  - JavaScript
 last_modified_at: 2019-07-16T12:04:24-04:00
 toc: true
 ---
@@ -27,7 +27,7 @@ toc: true
 만일 n만큼 이동한 뒤의 포인터 값이 null이 되었다면 삭제할 노드는 맨 앞 노드란 의미가 된다.
 
 
-재귀적인 방법
+문제풀이(JavaScript)
 -
 ~~~javascript
 /**
@@ -35,7 +35,7 @@ toc: true
  * function ListNode(val) {
  *     this.val = val;
  *     this.next = null;
- * }`
+ * }
  */
 /**
  * @param {ListNode} head
