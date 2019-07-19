@@ -1,5 +1,5 @@
 ---
-title: "[LeetCode] remove-nth-node-from-end-of-list"
+title: "[LeetCode] Remove nth node from end of list"
 categories: 
   - Algorithm
 tags:
