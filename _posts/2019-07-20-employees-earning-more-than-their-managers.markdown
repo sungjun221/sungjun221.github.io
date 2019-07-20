@@ -19,7 +19,7 @@ toc: true
 자신의 매니저보다 더 돈을 많이 보는 피고용인을 구하는 문제이다.
 동일한 테이블에 별명을 주어 ManagerID에 ID를 매핑하여 구한다.
 
-문제풀이(JavaScript)
+문제풀이
 -
 ~~~sql
 SELECT E1.NAME AS EMPLOYEE 

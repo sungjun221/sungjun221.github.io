@@ -22,7 +22,7 @@ toc: true
 SubQuery를 활용하여 푼다.
 
 
-문제풀이(JavaScript)
+문제풀이
 -
 ~~~sql
 SELECT MAX(SALARY) AS SECONDHIGHESTSALARY
