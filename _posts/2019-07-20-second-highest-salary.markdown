@@ -25,7 +25,7 @@ SubQuery를 활용하여 푼다.
 문제풀이(JavaScript)
 -
 ~~~sql
-SELECT MAX(Salary) AS SecondHighestSalary
-FROM Employee
-WHERE Salary < (SELECT MAX(Salary) FROM Employee);
+SELECT MAX(SALARY) AS SECONDHIGHESTSALARY
+FROM EMPLOYEE
+WHERE SALARY < (SELECT MAX(SALARY) FROM EMPLOYEE);
 ~~~
