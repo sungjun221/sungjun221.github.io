@@ -21,6 +21,9 @@ toc: true
 문제를 잘 읽어야 한다. UPDATE 하는 것으로 잘못 이해하고 문제를 풀려고 했다.
 CASE문을 이용한다. CASE를 이용하면 해당 column만 적용되는 것이 아니라 row에 적용된다. (당연한 말이지만..)
 
+MOD() 대신에 %를 사용하면 MySql에선 실행되지만 Oracle에선 에러가 난다.
+둘 다 실행이 가능한 MOD()를 사용하는 것이 나을 듯.
+
 3가지 케이스가 있다. ID가 홀수, 짝수, 그리고 마지막에 혼자 남은 홀수.
 
 문제풀이
@@ -28,8 +31,8 @@ CASE문을 이용한다. CASE를 이용하면 해당 column만 적용되는 것�
 ~~~sql
 SELECT
     CASE
-        WHEN ID % 2 <> 0 AND ID = (SELECT COUNT(1) FROM SEAT) THEN ID
-        WHEN ID % 2 = 0 THEN ID - 1
+        WHEN MOD(ID, 2) <> 0 AND ID = (SELECT COUNT(1) FROM SEAT) THEN ID
+        WHEN MOD(ID, 2) = 0 THEN ID - 1
         ELSE ID + 1
     END AS ID,
     STUDENT
