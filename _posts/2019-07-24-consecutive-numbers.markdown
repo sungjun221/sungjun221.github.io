@@ -24,12 +24,10 @@ WHERE l1.id = l2.id + 1 AND l1.id = l3.id + 2 와 같이 한 테이블을 기준
 문제풀이
 -
 ~~~sql
-SELECT SCORE,
-    ( SELECT COUNT(1)
-      FROM
-         ( SELECT DISTINCT SCORE S
-           FROM SCORES ) AS T
-      WHERE S >= SCORE ) AS RANK  -- S is inner's, SCORE is outer's
-FROM SCORES
-ORDER BY SCORE DESC;
+SELECT DISTINCT L1.NUM AS CONSECUTIVENUMS
+FROM LOGS L1, LOGS L2, LOGS L3
+WHERE L1.ID = L2.ID + 1
+  AND L2.ID = L3.ID + 1
+  AND L1.NUM = L2.NUM
+  AND L2.NUM = L3.NUM;
 ~~~
