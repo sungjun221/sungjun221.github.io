@@ -18,6 +18,7 @@ toc: true
 
 
 어떻게 풀까?
+-
 Shorten URL 서비스를 제공하는 문제이다. 
 
 Date객체를 이용해 36진수의 값을 생성하여 Shorten URL로 사용하고 원래 값과 매핑한다.
