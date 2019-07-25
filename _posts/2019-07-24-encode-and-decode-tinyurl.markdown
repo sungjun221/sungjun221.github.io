@@ -7,6 +7,7 @@ tags:
   - Encode and Decode TinyURL
   - LeetCode
   - JavaScript
+  - Java
 last_modified_at: 2019-07-24T12:04:24-04:00
 toc: true
 ---
