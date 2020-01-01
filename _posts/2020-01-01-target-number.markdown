@@ -75,7 +75,6 @@ class Solution {
         int prev = e.getPrev();
         
         if((target == prev) && (idx == numbers.length)){
-            System.out.println("ANSWER++");
             answer++;
             return;
         }
