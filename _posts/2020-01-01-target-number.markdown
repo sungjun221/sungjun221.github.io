@@ -23,9 +23,9 @@ toc: true
 재귀호출을 이용해서 풀어본 버전.
 ~~~java
 class Solution {
-    private static int[] numbers = null;
-    private static int target = 0;
-    private static int answer = 0;
+    private int[] numbers = null;
+    private int target = 0;
+    private int answer = 0;
     public int solution(int[] numbers, int target) {
         this.numbers = numbers;
         this.target = target;
@@ -33,12 +33,11 @@ class Solution {
         return answer;
     }
     
-    private static void dfs(int idx, int prev){
+    private void dfs(int idx, int prev){
         if((target == prev) && (idx == numbers.length)){
             answer++;
             return;
         }
-        
         if(idx >= numbers.length){
             return;
         }
