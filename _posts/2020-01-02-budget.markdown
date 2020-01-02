@@ -1,0 +1,71 @@
+---
+title: "[프로그래머스] 예산"
+categories: 
+  - Algorithm
+tags:
+  - Algorithm
+  - 예산
+  - 프로그래머스
+  - binary search
+  - Java
+last_modified_at: 2020-01-01T12:04:24-04:00
+toc: true
+---
+
+문제정보
+-
+- [프로그래머스 - 타겟 넘버](https://programmers.co.kr/learn/courses/30/lessons/43165)
+
+
+문제풀이
+-
+~~~java
+import java.util.*;
+
+class Solution{
+	public int solution(int[] budgets, int M){
+		int pv     = 0;
+		int prepv  = 0;
+		int answer = 0;
+		int min    = 0;
+		int max    = M;
+		int l      = budgets.length;
+		long sum   = 0;
+
+		Arrays.sort(budgets);
+		for(int v : budgets) sum += v;
+
+		if(sum <= M){
+			answer = budgets[l-1];
+			return answer;
+		}else{
+			while(true){
+				sum = 0;
+				pv = (max + min) / 2;
+
+				if(pv == prepv){
+					break;
+				}
+
+				for(int i=0; i<l; i++){
+					if(pv <= budgets[i]){
+						sum += pv * (l-i);
+						break;
+					}else{
+						sum += budgets[i];
+					}
+				}
+
+				if(sum <= M){
+					min = pv;
+				}else{
+					max = pv;
+				}
+				prepv = pv;
+			}
+			answer = pv;
+		}
+		return answer;
+	}	
+}
+~~~

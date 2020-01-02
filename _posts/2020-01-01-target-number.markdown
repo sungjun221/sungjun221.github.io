@@ -5,9 +5,8 @@ categories:
 tags:
   - Algorithm
   - 타겟 넘버
-  - target number
   - 프로그래머스
-  - Programmers
+  - DFS
   - Java
 last_modified_at: 2020-01-01T12:04:24-04:00
 toc: true
