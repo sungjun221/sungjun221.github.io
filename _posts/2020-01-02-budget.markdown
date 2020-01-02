@@ -14,7 +14,7 @@ toc: true
 
 문제정보
 -
-- [프로그래머스 - 타겟 넘버](https://programmers.co.kr/learn/courses/30/lessons/43165)
+- [프로그래머스 - 예산](https://programmers.co.kr/learn/courses/30/lessons/43237)
 
 
 문제풀이
