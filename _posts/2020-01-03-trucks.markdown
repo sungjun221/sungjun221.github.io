@@ -1,0 +1,70 @@
+---
+title: "[프로그래머스] 다리를 지나는 트럭"
+categories: 
+  - Algorithm
+tags:
+  - Algorithm
+  - 다리를 지나는 트럭
+  - 프로그래머스
+  - Hash
+  - Java
+last_modified_at: 2020-01-03T12:04:24-04:00
+toc: true
+---
+
+문제정보
+-
+- [프로그래머스 - 다리를 지나는 트럭](https://programmers.co.kr/learn/courses/30/lessons/42583)
+
+
+문제풀이
+-
+Hash 카테고리에 포함된 문제이나 그냥 주어진 array로 풀었다.
+문제 내용 그대로 정직하게(?) 푼 느낌이다.
+~~~java
+class Solution {
+	private int[] b = null;
+	private int q_w = 0;
+
+    public int solution(int bridge_length, int weight, int[] truck_weights) {
+    	b = new int[bridge_length];
+    	int turn = 0;
+    	int t_i = 0;
+
+    	while(true){
+    		turn++;
+    		int sum = 0;
+
+    		// 1. move trucks on the bridge
+    		for(int i=b.length-2; i>=0; i--){
+    			b[i+1] = b[i];
+    		}
+    		b[0] = 0;
+
+    		if(t_i < truck_weights.length){
+    			//  2. get weight of trucks on the bridge   			
+	    		for(int i=0; i<b.length; i++){
+	    			sum += b[i];
+	    		} 
+	    		
+	    		//	3. put the next truck
+	    		if(sum + truck_weights[t_i] <= weight){
+	    			b[0] = truck_weights[t_i];
+	    			t_i++;
+	    		}else{
+	    			b[0] = 0;
+	    		}
+    		}else{
+    			sum = 0;
+    			for(int i=0; i<b.length; i++){
+    				sum += b[i];
+    			}
+    			if(sum == 0){
+    				break;
+    			}
+    		}
+    	}
+        return turn;
+    }
+}
+~~~
