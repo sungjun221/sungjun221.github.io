@@ -6,7 +6,7 @@ tags:
   - Algorithm
   - 다리를 지나는 트럭
   - 프로그래머스
-  - Hash
+  - Stack/Queue
   - Java
 last_modified_at: 2020-01-03T12:04:24-04:00
 toc: true
@@ -19,7 +19,7 @@ toc: true
 
 문제풀이
 -
-Hash 카테고리에 포함된 문제이나 그냥 주어진 array로 풀었다.
+Stack/Queue 카테고리에 포함된 문제인데 그냥 주어진 array로 풀었다.
 문제 내용 그대로 정직하게(?) 푼 느낌이다.
 ~~~java
 class Solution {
@@ -42,12 +42,12 @@ class Solution {
     		b[0] = 0;
 
     		if(t_i < truck_weights.length){
-    			//  2. get weight of trucks on the bridge   			
+    			// 2. get weight of trucks on the bridge   			
 	    		for(int i=0; i<b.length; i++){
 	    			sum += b[i];
 	    		} 
 	    		
-	    		//	3. put the next truck
+	    		// 3. put the next truck
 	    		if(sum + truck_weights[t_i] <= weight){
 	    			b[0] = truck_weights[t_i];
 	    			t_i++;
