@@ -19,11 +19,11 @@ toc: true
 
 문제풀이
 -
-주어진 숫자들의 순열의 경우 중 소수인 경우를 구하되 중복은 제거한다. 
+주어진 숫자들의 순열 중 소수인 경우를 구하되 중복은 제거한다. 
 
 0으로 시작하는 경우 앞의 0을 없애야 한다.
 
-각 숫자들이 덧붙여지는 순열의 경우를 모두 확인해야하기 때문에 재귀를 이용하여 풀었다.
+경우의 수를 모두 확인해야하기 때문에 재귀를 이용하여 풀었다.
 
 ~~~java
 import java.util.*;
@@ -49,7 +49,6 @@ class Solution {
     	while(s.indexOf("0") == 0 && s.length() > 1){
     		s = s.substring(1);
     	}
-    	s.trim();
 
     	if(!primes.contains("," + s + ",") && isPrime(s)){
     		primes += s + ",";
