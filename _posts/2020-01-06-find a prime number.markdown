@@ -21,24 +21,22 @@ toc: true
 -
 주어진 숫자들의 순열 중 소수인 경우를 구하되 중복은 제거한다. 
 
-0으로 시작하는 경우 앞의 0을 없애야 한다.
-
-경우의 수를 모두 확인해야하기 때문에 재귀를 이용하여 풀었다.
+0으로 시작하는 경우 앞의 0을 없애야 한다. 경우의 수를 모두 확인해야하기 때문에 재귀를 이용하여 풀었다.
 
 ~~~java
 import java.util.*;
 
 class Solution {
-	private String[] sarr = null;
-	private int cnt = 0;
-	private String primes = ",";
+    private String[] sarr = null;
+    private int cnt = 0;
+    private String primes = ",";
 
     public int solution(String numbers) {
         sarr = new String[numbers.length()];
         boolean[] visited = new boolean[sarr.length];
 
         for(int i=0; i<sarr.length; i++){
-        	sarr[i] = numbers.substring(i, i+1);
+            sarr[i] = numbers.substring(i, i+1);
         }
 
         permutation(visited, "");
@@ -46,41 +44,41 @@ class Solution {
     }
 
     private void permutation(boolean[] visited, String s){
-    	while(s.indexOf("0") == 0 && s.length() > 1){
-    		s = s.substring(1);
-    	}
+        while(s.indexOf("0") == 0 && s.length() > 1){
+            s = s.substring(1);
+        }
 
-    	if(!primes.contains("," + s + ",") && isPrime(s)){
-    		primes += s + ",";
-    		cnt++;
-    	}
+        if(!primes.contains("," + s + ",") && isPrime(s)){
+            primes += s + ",";
+            cnt++;
+        }
 
-    	for(int i=0; i<sarr.length; i++){
-    		if(visited[i] == false){
-				visited[i] = true;
-				permutation(visited, s + sarr[i]);
-				visited[i] = false;
-    		}
-    	}
+        for(int i=0; i<sarr.length; i++){
+            if(visited[i] == false){
+                visited[i] = true;
+                permutation(visited, s + sarr[i]);
+                visited[i] = false;
+            }
+        }
     }
 
     private boolean isPrime(String s){
-    	if("".equals(s)){
-    		return false;
-    	}
+        if("".equals(s)){
+            return false;
+        }
 
-    	int n = Integer.parseInt(s);
+        int n = Integer.parseInt(s);
 
-    	if(n < 2){
-    		return false;
-    	}
+        if(n < 2){
+            return false;
+        }
 
-    	for(int i=2; i<=(n/2); i++){
-    		if((n%i) == 0){
-    			return false;
-    		}
-    	}
-    	return true;
+        for(int i=2; i<=(n/2); i++){
+            if((n%i) == 0){
+                return false;
+            }
+        }
+        return true;
     }
 }
 ~~~
