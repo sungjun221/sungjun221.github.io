@@ -1,0 +1,60 @@
+---
+title: "[프로그래머스] 네트워크"
+categories: 
+  - Algorithm
+tags:
+  - Algorithm
+  - 네트워크
+  - 프로그래머스
+  - Brute Force
+  - Java
+last_modified_at: 2020-01-07T12:04:24-04:00
+toc: true
+---
+
+문제정보
+-
+- [프로그래머스 - 네트워크](https://programmers.co.kr/learn/courses/30/lessons/43162)
+
+
+문제풀이
+-
+하나의 네트워크를 쭉 돌면서 visited 여부를 체크한다. 더 이상 돌 노드가 없으면 새로운 노드를 선택하여 새로운 네트워크를 탐색한다. 이 때 network count를 증가시킨다.
+
+visted는 1차원이면 된다. 현재 노드 입장에서 방문해야할 노드들의 방문여부를 확인하면 되기 때문이다. 
+
+~~~java
+class Solution {
+	private int[][] computers;
+	private boolean[] visited;
+	private int netCnt = 0;
+    public int solution(int n, int[][] computers) {
+        this.computers = computers;
+        visited = new boolean[n];
+        for(int i=0; i<n; i++){
+        	if(visited[i] == false){
+        		dfs(i, 0);
+        	}
+        }
+
+        return netCnt;
+    }
+
+    private void dfs(int t, int connCnt){
+    	if(visited[t] == true){
+    		return;
+    	}
+    	visited[t] = true;
+
+    	if(connCnt == 0){
+    		netCnt++;
+    	}
+
+    	for(int i=0; i<computers[0].length; i++){
+    		if((t != i) && (visited[i] == false) && (computers[t][i] == 1)){
+    			dfs(i, connCnt+1);
+    		}
+    	}
+    }
+}
+~~~
