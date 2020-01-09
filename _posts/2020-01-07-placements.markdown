@@ -4,7 +4,7 @@ categories:
   - Sql
 tags:
   - Sql
-  - placements
+  - Placements
   - HackerRank
 last_modified_at: 2020-01-07T12:04:24-04:00
 toc: true

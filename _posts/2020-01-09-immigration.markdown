@@ -1,10 +1,10 @@
 ---
-title: "[프로그래머스] Immigration"
+title: "[프로그래머스] 입국심사"
 categories: 
   - Algorithm
 tags:
   - Algorithm
-  - immigration
+  - 입국심사
   - 프로그래머스
   - Binary Search
   - Java
@@ -14,7 +14,7 @@ toc: true
 
 문제정보
 -
-- [프로그래머스 - Immigration](https://www.hackerrank.com/challenges/placements/problem)
+- [프로그래머스 - 입국심사](https://programmers.co.kr/learn/courses/30/lessons/43238)
 
 어떻게 풀까?
 -
