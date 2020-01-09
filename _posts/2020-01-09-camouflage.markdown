@@ -32,24 +32,24 @@ import java.util.*;
 
 class Solution {
     public int solution(String[][] clothes) {
-    	Map<String, Integer> m = new HashMap<>();
-    	int answer = 1;
+        Map<String, Integer> m = new HashMap<>();
+        int answer = 1;
 
-    	for(int i=0; i<clothes.length; i++){
-    		String k = clothes[i][1];
-    		if(m.containsKey(k)){
-    			int v = (int)m.get(k);
-    			m.put(k, v+1);
-    		}else{
-    			m.put(k, 1);
-    		}
-    	}
+        for(int i=0; i<clothes.length; i++){
+            String k = clothes[i][1];
+            if(m.containsKey(k)){
+                int v = (int)m.get(k);
+                m.put(k, v+1);
+            }else{
+                m.put(k, 1);
+            }
+        }
 
-    	for(String k : m.keySet()){
-    		int v = m.get(k);
-    		answer *= (v+1);
-    	}
-    	answer -= 1;
+        for(String k : m.keySet()){
+            int v = m.get(k);
+            answer *= (v+1);
+        }
+        answer -= 1;
         return answer;
     }
 }
