@@ -2,7 +2,6 @@
 title: "[HackerRank] Abbreviation"
 categories: 
   - Algorithm
-  - Main
 tags:
   - Algorithm
   - Abbreviation
