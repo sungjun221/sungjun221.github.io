@@ -95,3 +95,4 @@ public class Solution {
 - - -
 * 참고
   - [zerocho - Dynamic Programming](https://www.zerocho.com/category/Algorithm/post/584b979a580277001862f182)
+  - [Abbreviation 문제풀이](http://mrkimkim.com/study/coding_interview/coding-interview-abbreviation/)

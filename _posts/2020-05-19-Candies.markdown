@@ -1,0 +1,86 @@
+---
+title: "[HackerRank] Candies"
+categories: 
+  - Algorithm
+tags:
+  - Algorithm
+  - Candies
+  - HackerRank
+  - Dynamic Programming
+  - Java
+last_modified_at: 2020-05-18T12:04:24-04:00
+toc: true
+---
+문제정보
+-
+- [HackerRank - Candies](https://www.hackerrank.com/challenges/candies/problem)
+
+어떻게 풀까?
+-
+아이들의 성적에 따라 캔디를 나눠주는 문제이다. 마주앉은 아이 중 성적이 높은 아이는 더 많은 캔디를 받아야 한다. 최소한의 캔디로 분배해야 한다.
+
+배열을 만들어 앞에서부터 한 번, 뒤에서부터 한 번 순회하며 이전 아이보다 성적이 높으면 (이전아이)+1, 아니면 1을 넣는다.
+
+이 두 배열 값을 비교하여 더 큰 값을 Sum하여 값을 구한다. 값을 배열에 저장한다는 의미에서 DP문제로 분류해둔 것 같다.
+
+
+문제풀이(Java)
+-
+~~~java
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.Scanner;
+
+public class Solution {
+    
+    static long candies(int n, int[] arr) {
+        long sum = 0;
+        int[] dp_up = new int[arr.length];
+        int[] dp_down = new int[arr.length];
+        dp_up[0] = 1;
+        dp_down[arr.length-1] = 1;
+        
+        for(int i=1; i<arr.length; i++){
+            dp_up[i] = (arr[i-1] < arr[i]) ? (dp_up[i-1] + 1) : 1;
+        }
+
+        for(int i=arr.length-2; i>=0; i--){
+            int t = (arr[i+1] < arr[i]) ? (dp_down[i+1] + 1) : 1;
+            dp_down[i] = Math.max(dp_down[i], t);
+        }
+        
+        for(int i=0; i<arr.length; i++) {
+        	sum += Math.max(dp_up[i], dp_down[i]);
+        }
+        
+        return sum;
+    }
+
+    private static final Scanner scanner = new Scanner(System.in);
+
+    public static void main(String[] args) throws IOException {
+        BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
+
+        int n = scanner.nextInt();
+        scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
+
+        int[] arr = new int[n];
+
+        for (int i = 0; i < n; i++) {
+            int arrItem = scanner.nextInt();
+            scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
+            arr[i] = arrItem;
+        }
+
+        long result = candies(n, arr);
+
+        bufferedWriter.write(String.valueOf(result));
+        bufferedWriter.newLine();
+
+        bufferedWriter.close();
+
+        scanner.close();
+    }
+}
+~~~
