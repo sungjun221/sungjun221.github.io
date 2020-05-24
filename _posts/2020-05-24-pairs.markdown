@@ -1,0 +1,81 @@
+---
+title: "[HackerRank] Pairs"
+categories: 
+  - Algorithm
+tags:
+  - Algorithm
+  - Pairs
+  - HackerRank
+  - Search
+  - Java
+last_modified_at: 2020-05-24T12:04:24-04:00
+toc: true
+---
+문제정보
+-
+- [HackerRank - Pairs](https://www.hackerrank.com/challenges/pairs/problem)
+
+어떻게 풀까?
+-
+배열 중 두 요소의 차가 target값이 되는 경우의 수를 구하는 문제이다. 배열을 정렬한 뒤 값을 계산한다.
+
+문제풀이(Java)
+-
+~~~java
+import java.io.*;
+import java.math.*;
+import java.security.*;
+import java.text.*;
+import java.util.*;
+import java.util.concurrent.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    static int pairs(int k, int[] arr) {
+        int result = 0;
+        Arrays.sort(arr);
+
+        for(int i=0; i<arr.length-1; i++){
+            for(int j=(i+1); j<arr.length; j++){
+                if(arr[j]-arr[i] == k){
+                    result++;
+                    break;
+                }
+            }
+        }
+        return result;
+    }
+
+    private static final Scanner scanner = new Scanner(System.in);
+
+    public static void main(String[] args) throws IOException {
+        BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
+
+        String[] nk = scanner.nextLine().split(" ");
+
+        int n = Integer.parseInt(nk[0]);
+
+        int k = Integer.parseInt(nk[1]);
+
+        int[] arr = new int[n];
+
+        String[] arrItems = scanner.nextLine().split(" ");
+        scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
+
+        for (int i = 0; i < n; i++) {
+            int arrItem = Integer.parseInt(arrItems[i]);
+            arr[i] = arrItem;
+        }
+
+        int result = pairs(k, arr);
+
+        bufferedWriter.write(String.valueOf(result));
+        bufferedWriter.newLine();
+
+        bufferedWriter.close();
+
+        scanner.close();
+    }
+}
+~~~
