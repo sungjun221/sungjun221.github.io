@@ -1,5 +1,5 @@
 ---
-title: "[HackerRank] Swap Nodes \[Algo\]"
+title: "[HackerRank] Swap Nodes [Algo]"
 categories: 
   - Algorithm
 tags:
@@ -14,7 +14,7 @@ toc: true
 ---
 문제정보
 -
-- [HackerRank - Swap Nodes \[Algo\]](https://www.hackerrank.com/challenges/swap-nodes-algo/problem)
+- [HackerRank - Swap Nodes [Algo]](https://www.hackerrank.com/challenges/swap-nodes-algo/problem)
 
 어떻게 풀까?
 -
