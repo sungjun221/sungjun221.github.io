@@ -19,17 +19,16 @@ toc: true
 -
 쿼리값 start, end, k 값을 주어진 배열에 적용하여 그 중 최대값을 구하는 문제이다.
 
-brute force로 풀면 간단해 보이는 문제이나, 당연히 이렇게 풀면 Timed out이 뜬다.
+Brute force로 풀면 간단해 보이는 문제이나, 당연히 이렇게 풀면 Timed out이 뜬다.
 
 문제해결의 핵심은 값 자체를 다 구하는 것이 아니라 difference(변화)값만을 갖고 계산하는 것이다.
 
-start에 k값을 더하고 end+1에 k값을 빼서 배열의 변화값을 표현한다.c
-
-그리고 이 배열을 순회하며 변화값을 더하고 빼서 max값을 구하는 것이다.
+start에 k값을 더하고 end+1에 k값을 빼서 배열의 변화값을 표현한다. 그리고 이 배열을 순회하며 변화값을 더하고 빼서 max값을 구하는 것이다.
  
 
 문제풀이(Java)
 -
+~~~java
 import java.io.*;
 import java.math.*;
 import java.security.*;
