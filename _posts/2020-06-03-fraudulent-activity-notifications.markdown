@@ -127,6 +127,8 @@ public class Solution {
 }
 ~~~
 
+문제풀이(Python)
+-
 ~~~python
 #!/bin/python3
 
