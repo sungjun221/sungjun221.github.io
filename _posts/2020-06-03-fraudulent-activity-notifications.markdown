@@ -16,7 +16,8 @@ toc: true
 - [HackerRank - Fraudulent Activity Notifications](https://www.hackerrank.com/challenges/fraudulent-activity-notifications/problem)
 
 어떻게 풀까?
-- 주어진 날짜배열에서 현재날짜의 거래금액이 d만큼 이전날짜들 금액의 중간값 2배 이상이 되는 경우가 몇 번이나 있는지 구하는 문제이다.
+-
+주어진 날짜배열에서 현재날짜의 거래금액이 d만큼 이전날짜들 금액의 중간값 2배 이상이 되는 경우가 몇 번이나 있는지 구하는 문제이다.
 
 역시나 그냥 구하면 Timed out이 뜬다. 중간값을 구하는 것을 효율화해야한다. 문제의 제약사항에서 expenditure[i]의 값이 0~200 사이라는 것이 포인트이다.
 
