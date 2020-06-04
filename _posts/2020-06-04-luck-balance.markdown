@@ -1,5 +1,5 @@
 ---
-title: "[HackerRank] Luck balance"
+title: "[HackerRank] Luck Balance"
 categories: 
   - Algorithm
 tags:
@@ -13,7 +13,7 @@ toc: true
 ---
 문제정보
 -
-- [HackerRank - Luck balance](https://www.hackerrank.com/challenges/luck-balance/problem)
+- [HackerRank - Luck Balance](https://www.hackerrank.com/challenges/luck-balance/problem)
 
 어떻게 풀까?
 -
@@ -26,6 +26,7 @@ Java의 경우, 중요한 컨테스트는 PriorityQueue로 입력값을 내림�
 
 문제풀이(Java)
 -
+~~~java
 import java.io.*;
 import java.math.*;
 import java.security.*;
