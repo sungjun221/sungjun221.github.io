@@ -9,6 +9,7 @@ tags:
   - Greedy Algorithm
   - Java
   - Python
+  - Javascript
 last_modified_at: 2020-06-06T12:04:24-04:00
 toc: true
 ---
@@ -125,4 +126,67 @@ if __name__ == '__main__':
     fptr.write(str(minimumCost) + '\n')
 
     fptr.close()
+~~~
+
+문제풀이(Javascript)
+-
+~~~javascript
+'use strict';
+
+const fs = require('fs');
+
+process.stdin.resume();
+process.stdin.setEncoding('utf-8');
+
+let inputString = '';
+let currentLine = 0;
+
+process.stdin.on('data', inputStdin => {
+    inputString += inputStdin;
+});
+
+process.stdin.on('end', function() {
+    inputString = inputString.replace(/\s*$/, '')
+        .split('\n')
+        .map(str => str.replace(/\s*$/, ''));
+
+    main();
+});
+
+function readLine() {
+    return inputString[currentLine++];
+}
+
+function getMinimumCost(k, c) {
+    c.sort();
+    let cost = 0;
+    let idx = 0;
+    let t = 0;
+
+    while(idx < c.length){
+        t = Math.floor(idx / k);
+        cost += (t + 1) * c[c.length-1-idx];
+        idx++;
+    }
+
+    return cost;
+}
+
+function main() {
+    const ws = fs.createWriteStream(process.env.OUTPUT_PATH);
+
+    const nk = readLine().split(' ');
+
+    const n = parseInt(nk[0], 10);
+
+    const k = parseInt(nk[1], 10);
+
+    const c = readLine().split(' ').map(cTemp => parseInt(cTemp, 10));
+
+    const minimumCost = getMinimumCost(k, c);
+
+    ws.write(minimumCost + '\n');
+
+    ws.end();
+}
 ~~~
