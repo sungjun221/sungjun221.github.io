@@ -8,6 +8,7 @@ tags:
   - HackerRank
   - Greedy Algorithm
   - Java
+  - Python
 last_modified_at: 2020-06-06T12:04:24-04:00
 toc: true
 ---
@@ -81,4 +82,47 @@ public class Solution {
         scanner.close();
     }
 }
+~~~
+
+문제풀이(Python)
+-
+~~~python
+#!/bin/python3
+
+import math
+import os
+import random
+import re
+import sys
+
+# Complete the getMinimumCost function below.
+def getMinimumCost(k, c):
+	c.sort()
+	cost = 0
+	idx = 0
+	t = 0
+
+	while idx < len(c):
+		t = idx // k
+		cost += (t + 1) * c[len(c)-1-idx]
+		idx += 1
+
+	return cost
+
+if __name__ == '__main__':
+    fptr = open(os.environ['OUTPUT_PATH'], 'w')
+
+    nk = input().split()
+
+    n = int(nk[0])
+
+    k = int(nk[1])
+
+    c = list(map(int, input().rstrip().split()))
+
+    minimumCost = getMinimumCost(k, c)
+
+    fptr.write(str(minimumCost) + '\n')
+
+    fptr.close()
 ~~~
