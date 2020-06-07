@@ -9,6 +9,7 @@ tags:
   - Greedy Algorithm
   - Java
   - Python
+  - Javascript
 last_modified_at: 2020-06-07T12:04:24-04:00
 toc: true
 ---
@@ -97,6 +98,7 @@ public class Solution {
 
 문제풀이(Python)
 -
+Python의 List는 append()로 값을 담는다.
 ~~~python
 #!/bin/python3
 
@@ -148,4 +150,83 @@ if __name__ == '__main__':
     fptr.write(str(result) + '\n')
 
     fptr.close()
+~~~
+
+문제풀이(Javascript)
+-
+Javascript의 array는 push()로 값을 담는다.
+~~~javascript
+'use strict';
+
+const fs = require('fs');
+
+process.stdin.resume();
+process.stdin.setEncoding('utf-8');
+
+let inputString = '';
+let currentLine = 0;
+
+process.stdin.on('data', inputStdin => {
+    inputString += inputStdin;
+});
+
+process.stdin.on('end', function() {
+    inputString = inputString.replace(/\s*$/, '')
+        .split('\n')
+        .map(str => str.replace(/\s*$/, ''));
+
+    main();
+});
+
+function readLine() {
+    return inputString[currentLine++];
+}
+
+function maxMin(k, arr) {
+    arr.sort((a,b)=> a-b);
+    let diff = [];
+    let unfairness = 0;
+    let min = Number.MAX_SAFE_INTEGER;
+
+    for(let i=0; i<arr.length-1; i++){
+        diff.push(arr[i+1] - arr[i]);
+    }
+
+    for(let i=0; i<k-1; i++){
+        unfairness += diff[i];
+    }
+    min = unfairness;
+
+    for(let i=(k-1); i<diff.length; i++){
+        unfairness -= diff[i-(k-1)];
+        unfairness += diff[i];
+
+        if(min > unfairness){
+            min = unfairness;
+        }
+    }
+
+    return min;
+}
+
+function main() {
+    const ws = fs.createWriteStream(process.env.OUTPUT_PATH);
+
+    const n = parseInt(readLine(), 10);
+
+    const k = parseInt(readLine(), 10);
+
+    let arr = [];
+
+    for (let i = 0; i < n; i++) {
+        const arrItem = parseInt(readLine(), 10);
+        arr.push(arrItem);
+    }
+
+    const result = maxMin(k, arr);
+
+    ws.write(result + '\n');
+
+    ws.end();
+}
 ~~~
