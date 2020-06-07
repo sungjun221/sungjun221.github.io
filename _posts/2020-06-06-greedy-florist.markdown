@@ -162,7 +162,7 @@ function readLine() {
 }
 
 function getMinimumCost(k, c) {
-    c.sort();
+    c.sort((a,b)=> a-b);
     let cost = 0;
     let idx = 0;
     let t = 0;
@@ -170,7 +170,7 @@ function getMinimumCost(k, c) {
     while(idx < c.length){
         t = Math.floor(idx / k);
         cost += (t + 1) * c[c.length-1-idx];
-        idx++;
+        idx += 1;
     }
 
     return cost;
