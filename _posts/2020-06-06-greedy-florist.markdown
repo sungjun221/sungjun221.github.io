@@ -87,6 +87,7 @@ public class Solution {
 
 문제풀이(Python)
 -
+Python에서 /를 하면 실수형으로 반환되기 때문에 //를 하여 정수값을 얻는다.
 ~~~python
 #!/bin/python3
 
@@ -130,6 +131,9 @@ if __name__ == '__main__':
 
 문제풀이(Javascript)
 -
+Javascript에서 array sort()를 하면 ASCII 문자 순서로 정렬되어 크기순대로 정렬되지 않는다. (ex: 1, 11, 2, 3, 33, 4, ...)
+
+sortFunction을 넘겨주어 정렬을 시켜야한다.
 ~~~javascript
 'use strict';
 
