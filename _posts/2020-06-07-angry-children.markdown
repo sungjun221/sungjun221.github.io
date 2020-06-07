@@ -8,6 +8,7 @@ tags:
   - HackerRank
   - Greedy Algorithm
   - Java
+  - Python
 last_modified_at: 2020-06-07T12:04:24-04:00
 toc: true
 ---
@@ -92,4 +93,59 @@ public class Solution {
         scanner.close();
     }
 }
+~~~
+
+문제풀이(Python)
+-
+~~~python
+#!/bin/python3
+
+import math
+import os
+import random
+import re
+import sys
+
+# Complete the maxMin function below.
+def maxMin(k, arr):
+    arr.sort()
+    diff = []
+    unfairness = 0
+    min = sys.maxsize
+
+    for i in range(len(arr)-1):
+        diff.append(arr[i+1] - arr[i])
+
+    for i in range(k-1):
+        unfairness += diff[i]
+
+    min = unfairness
+
+    for i in range(k-1, len(diff)):
+        unfairness -= diff[i-(k-1)]
+        unfairness += diff[i]
+
+        if min > unfairness:
+            min = unfairness
+
+    return min
+
+if __name__ == '__main__':
+    fptr = open(os.environ['OUTPUT_PATH'], 'w')
+
+    n = int(input())
+
+    k = int(input())
+
+    arr = []
+
+    for _ in range(n):
+        arr_item = int(input())
+        arr.append(arr_item)
+
+    result = maxMin(k, arr)
+
+    fptr.write(str(result) + '\n')
+
+    fptr.close()
 ~~~
