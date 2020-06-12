@@ -39,5 +39,70 @@ reverse 되어 있기 때문에 s값을 뒤에서부터 순회하며 대상이 �
 문제풀이(Java)
 -
 ~~~java
-    // 작성 중
+import java.io.*;
+import java.math.*;
+import java.security.*;
+import java.text.*;
+import java.util.*;
+import java.util.concurrent.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    static String reverseShuffleMerge(String s) {
+        int[] addCnt = new int[26];
+        int[] skipCnt = new int[26];
+        Stack<Character> st = new Stack<>();
+        String rslt = "";
+
+        char[] ss = s.toCharArray();
+
+        for(int i=0; i<ss.length; i++){
+            addCnt[ss[i] - 'a']++;
+        }
+
+        for(int i=0; i<addCnt.length; i++){
+            addCnt[i] /= 2;
+        }
+
+        skipCnt = addCnt.clone();
+
+        for(int i=ss.length-1; i>=0; i--){
+            while(!st.empty() && st.peek() > ss[i] && addCnt[ss[i] - 'a'] > 0 && skipCnt[st.peek() - 'a'] > 0){
+                char c = st.pop();
+                addCnt[c - 'a']++;
+                skipCnt[c - 'a']--;
+            }
+
+            if(addCnt[ss[i] - 'a'] > 0){
+                st.push(ss[i]);
+                addCnt[ss[i] - 'a']--;
+            }else{
+                skipCnt[ss[i] - 'a']--;
+            }
+        }
+
+        while(!st.empty()){
+            rslt = st.pop() + rslt;
+        }
+        return rslt;
+    }
+
+    private static final Scanner scanner = new Scanner(System.in);
+
+    public static void main(String[] args) throws IOException {
+        BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
+
+        String s = scanner.nextLine();
+
+        String result = reverseShuffleMerge(s);
+
+        bufferedWriter.write(result);
+        bufferedWriter.newLine();
+
+        bufferedWriter.close();
+
+        scanner.close();
+    }
+}
 ~~~
