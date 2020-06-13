@@ -8,6 +8,7 @@ tags:
   - HackerRank
   - Greedy Algorithm
   - Java
+  - Python
 last_modified_at: 2020-06-12T12:04:24-04:00
 toc: true
 ---
@@ -105,4 +106,62 @@ public class Solution {
         scanner.close();
     }
 }
+~~~
+
+문제풀이(Python)
+--
+~~~python
+#!/bin/python3
+import copy
+import math
+import os
+import random
+import re
+import sys
+
+
+# Complete the reverseShuffleMerge function below.
+def reverseShuffleMerge(s):
+    addCnt = [0] * 26
+    st = []
+    rslt = ""
+
+    ss = list(s)
+
+    for i in range(len(ss)):
+        addCnt[ord(ss[i]) - ord('a')] += 1
+
+    for i in range(len(addCnt)):
+        addCnt[i] = addCnt[i] // 2
+
+    skipCnt = copy.deepcopy(addCnt)
+
+    for i in range(len(ss) - 1, -1, -1):
+        while st and st[-1] > ss[i] and addCnt[ord(ss[i]) - ord('a')] > 0 and skipCnt[ord(st[-1]) - ord('a')] > 0:
+            c = st.pop()
+            addCnt[ord(c) - ord('a')] += 1
+            skipCnt[ord(c) - ord('a')] -= 1
+
+        if addCnt[ord(ss[i]) - ord('a')] > 0:
+            st.append(ss[i])
+            addCnt[ord(ss[i]) - ord('a')] -= 1
+        else:
+            skipCnt[ord(ss[i]) - ord('a')] -= 1
+
+    while st:
+        rslt = st.pop() + rslt
+
+    return rslt
+
+
+if __name__ == '__main__':
+    fptr = open(os.environ['OUTPUT_PATH'], 'w')
+
+    s = input()
+
+    result = reverseShuffleMerge(s)
+
+    fptr.write(result + '\n')
+
+    fptr.close()
 ~~~
