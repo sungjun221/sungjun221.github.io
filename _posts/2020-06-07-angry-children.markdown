@@ -9,7 +9,7 @@ tags:
   - Greedy Algorithm
   - Java
   - Python
-  - Javascript
+  - JavaScript
 last_modified_at: 2020-06-07T12:04:24-04:00
 toc: true
 ---
@@ -152,9 +152,9 @@ if __name__ == '__main__':
     fptr.close()
 ~~~
 
-문제풀이(Javascript)
+문제풀이(JavaScript)
 -
-Javascript의 array는 push()로 값을 담는다.
+JavaScript의 array는 push()로 값을 담는다.
 ~~~javascript
 'use strict';
 

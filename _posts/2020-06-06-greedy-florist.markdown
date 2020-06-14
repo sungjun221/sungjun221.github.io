@@ -9,7 +9,7 @@ tags:
   - Greedy Algorithm
   - Java
   - Python
-  - Javascript
+  - JavaScript
 last_modified_at: 2020-06-06T12:04:24-04:00
 toc: true
 ---
@@ -129,9 +129,9 @@ if __name__ == '__main__':
     fptr.close()
 ~~~
 
-문제풀이(Javascript)
+문제풀이(JavaScript)
 -
-Javascript에서 array sort()를 하면 ASCII 문자 순서로 정렬되어 크기순대로 정렬되지 않는다. (ex: 1, 11, 2, 3, 33, 4, ...)
+JavaScript에서 array sort()를 하면 ASCII 문자 순서로 정렬되어 크기순대로 정렬되지 않는다. (ex: 1, 11, 2, 3, 33, 4, ...)
 
 sortFunction을 넘겨주어 정렬을 시켜야한다.
 ~~~javascript

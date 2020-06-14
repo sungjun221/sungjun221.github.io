@@ -9,6 +9,7 @@ tags:
   - Greedy Algorithm
   - Java
   - Python
+  - JavaScript
 last_modified_at: 2020-06-12T12:04:24-04:00
 toc: true
 ---
@@ -164,4 +165,91 @@ if __name__ == '__main__':
     fptr.write(result + '\n')
 
     fptr.close()
+~~~
+
+문제풀이(JavaScript)
+--
+~~~javascript
+'use strict';
+
+const fs = require('fs');
+
+process.stdin.resume();
+process.stdin.setEncoding('utf-8');
+
+let inputString = '';
+let currentLine = 0;
+
+process.stdin.on('data', inputStdin => {
+    inputString += inputStdin;
+});
+
+process.stdin.on('end', _ => {
+    inputString = inputString.replace(/\s*$/, '')
+        .split('\n')
+        .map(str => str.replace(/\s*$/, ''));
+
+    main();
+});
+
+function readLine() {
+    return inputString[currentLine++];
+}
+
+Array.prototype.last = function(){
+    return this[this.length - 1];
+};
+
+function reverseShuffleMerge(s) {
+    let addCnt = new Array(26).fill(0);
+    let skipCnt;
+    let st = [];
+    let rslt = "";
+
+    for(let i=0; i<s.length; i++){
+        addCnt[charIdx(s[i])]++;
+    }
+
+    for(let i=0; i<addCnt.length; i++){
+        addCnt[i] = Math.floor(addCnt[i]/2);
+    }
+
+    skipCnt = [...addCnt];
+
+    for(let i=s.length-1; i>=0; i--){
+        while(st.length > 0 && st.last() > s[i]  && addCnt[charIdx(s[i])] > 0 && skipCnt[charIdx(st.last())] > 0){
+            let c = st.pop();
+            addCnt[charIdx(c)]++;
+            skipCnt[charIdx(c)]--;
+        }
+
+        if(addCnt[charIdx(s[i])] > 0){
+            st.push(s[i]);
+            addCnt[charIdx(s[i])]--;
+        }else{
+            skipCnt[charIdx(s[i])]--;
+        }
+    }
+
+    while(st.length > 0){
+        rslt = st.pop() + rslt;
+    }
+    return rslt;
+}
+
+function charIdx(c){
+    return c.charCodeAt(0) - 97;
+}
+
+function main() {
+    const ws = fs.createWriteStream(process.env.OUTPUT_PATH);
+
+    const s = readLine();
+
+    let result = reverseShuffleMerge(s);
+
+    ws.write(result + "\n");
+
+    ws.end();
+}
 ~~~
