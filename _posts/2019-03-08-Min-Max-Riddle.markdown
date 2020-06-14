@@ -2,7 +2,6 @@
 title: "[HackerRank] Min Max Riddle"
 categories: 
   - Algorithm
-  - Main
 tags:
   - Algorithm
   - Min Max Riddle
