@@ -30,8 +30,82 @@ toc: true
 
 - 그런데 0..i까지의 누적합의 나머지가 0..i까지의 누적합보다 크면 -값이 나오게 된다. 이 경우는 m값을 더한 후 빼면 된다.
 
+- 선택된 누적합의 나머지보다 +1 이상인 값 중 가장 작은 값이 -값이 나오는 경우 중 가장 큰 max값을 갖게 된다.
+
+
+솔직히 푸는 방식을 이해하는데도 꽤 시간이 걸렸다. 여러번 복습해야할 것 같다.
+
 문제풀이(Java)
 -
 ~~~java
+import java.io.*;
+import java.math.*;
+import java.security.*;
+import java.text.*;
+import java.util.*;
+import java.util.concurrent.*;
+import java.util.regex.*;
 
+public class Solution {
+
+    static long maximumSum(long[] a, long m) {
+        long max = 0;
+        long modSum = 0;
+        TreeSet<Long> modSums = new TreeSet<>();
+
+        for(long v : a){
+            modSum = (modSum + v) % m;
+            Long closesetLargerSum = modSums.ceiling(modSum + 1);
+            if(closesetLargerSum == null) closesetLargerSum = 0L;
+
+            if(closesetLargerSum > 0){
+                max = Math.max(max, modSum - closesetLargerSum + m);
+            }
+
+            max = Math.max(max, modSum);
+            modSums.add(modSum);
+        }
+        return max;
+    }
+
+    private static final Scanner scanner = new Scanner(System.in);
+
+    public static void main(String[] args) throws IOException {
+        BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
+
+        int q = scanner.nextInt();
+        scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
+
+        for (int qItr = 0; qItr < q; qItr++) {
+            String[] nm = scanner.nextLine().split(" ");
+
+            int n = Integer.parseInt(nm[0]);
+
+            long m = Long.parseLong(nm[1]);
+
+            long[] a = new long[n];
+
+            String[] aItems = scanner.nextLine().split(" ");
+            scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
+
+            for (int i = 0; i < n; i++) {
+                long aItem = Long.parseLong(aItems[i]);
+                a[i] = aItem;
+            }
+
+            long result = maximumSum(a, m);
+
+            bufferedWriter.write(String.valueOf(result));
+            bufferedWriter.newLine();
+        }
+
+        bufferedWriter.close();
+
+        scanner.close();
+    }
+}
 ~~~
+
+- - -
+* 참고
+    - [SpringOne Platform 2018 - Guide to 'Reactive' for Spring MVC Developers](https://content.pivotal.io/springone-platform-2018/guide-to-reactive-for-spring-mvc-developers)
