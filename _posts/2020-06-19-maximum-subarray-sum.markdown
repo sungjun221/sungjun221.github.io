@@ -108,4 +108,5 @@ public class Solution {
 
 - - -
 * 참고
-    - [SpringOne Platform 2018 - Guide to 'Reactive' for Spring MVC Developers](https://content.pivotal.io/springone-platform-2018/guide-to-reactive-for-spring-mvc-developers)
+    - [brokensandals.net](https://brokensandals.net/technical/programming-challenges/hackerrank-maximum-subarray-sum)
+    - [geeksforgeeks](https://www.geeksforgeeks.org/maximum-subarray-sum-modulo-m)
